@@ -1,0 +1,125 @@
+ROI,sort_try
+Right Cerebrum,-2
+Left Cerebrum,-1
+White Matter,0
+Central,0
+Posterior,0
+Mid Posterior,0
+Mid Anterior,0
+Anterior,0
+Brainstem,0
+WM Hypointensities,0
+Right Cerebellum White Matter,0
+Right Cerebellum Cortex,0
+Right Cerebral White Matter,0
+Left Cerebral White Matter,0
+Corpus Callosum,0
+Left Cerebellum White Matter,0
+Left Cerebellum Cortex,0
+Brain Region,0
+3rd Ventricle,0
+Right Cerebellum,0
+Right Inf Lat Vent,0
+Left Cerebellum,0
+Right Choroid Plexus,0
+Right Lateral Ventricle,0
+Cerebrum,0
+4th Ventricle,0
+Cerebrospinal Fluid,0
+Cerebellum,0
+Left Inf Lat Vent,0
+Left Lateral Ventricle,0
+Left Choroid Plexus,0
+CSF,0
+Left Frontal Lobe,1
+Right Insula,1
+Left Parietal Lobe,2
+Right Diencephalon,2
+Right Cingulate Gyrus,3
+Left Temporal Lobe,3
+Right Basal Ganglia,4
+Left Occipital Lobe,4
+Left Basal Ganglia,5
+Right Occipital Lobe,5
+Left Cingulate Gyrus,6
+Right Temporal Lobe,6
+Right Parietal Lobe,7
+Left Diencephalon,7
+Right Frontal Lobe,8
+Left Insula,8
+Left Superior Frontal,18
+Right Caudal Middle Frontal,18
+Right Lateral Orbitofrontal,17
+Left Rostral Middle Frontal,17
+Left Precentral,16
+Right Medial Orbitofrontal,16
+Left Pars Triangularis,15
+Right Paracentral,15
+Right Pars Opercularis,14
+Left Pars Orbitalis,14
+Left Pars Opercularis,13
+Right Pars Orbitalis,13
+Right Pars Triangularis,12
+Left Paracentral,12
+Right Precentral,11
+Left Medial Orbitofrontal,11
+Right Rostral Middle Frontal,10
+Left Lateral Orbitofrontal,10
+Right Superior Frontal,9
+Left Caudal Middle Frontal,9
+Right Supramarginal,19
+Left Inferior Parietal,19
+Left Postcentral,20
+Right Superior Parietal,20
+Left Precuneus,21
+Right Precuneus,21
+Left Superior Parietal,22
+Right Postcentral,22
+Left Supramarginal,23
+Right Inferior Parietal,23
+Left Amygdala,24
+Right Transverse Temporal,24
+Left Entorhinal,25
+Right Superior Temporal,25
+Right Parahippocampal,26
+Left Fusiform,26
+Right Middle Temporal,27
+Left Hippocampus,27
+Right Inferior Temporal,28
+Left Inferior Temporal,28
+Right Hippocampus,29
+Left Middle Temporal,29
+Right Fusiform,30
+Left Parahippocampal,30
+Right Entorhinal,31
+Left Superior Temporal,31
+Left Transverse Temporal,32
+Right Amygdala,32
+Right Pericalcarine,33
+Left Cuneus,33
+Right Lingual,34
+Left Lateral Occipital,34
+Right Lateral Occipital,35
+Left Lingual,35
+Left Pericalcarine,36
+Right Cuneus,36
+Left Caudate Nucleus,37
+Right Putamen,37
+Right Pallidum,38
+Left Nucleus Accumbens,38
+Right Nucleus Accumbens,39
+Left Pallidum,39
+Right Caudate Nucleus,40
+Left Putamen,40
+Left Caudal Anterior,41
+Right Rostral Anterior,41
+Left Isthmus,42
+Right Posterior,42
+Right Isthmus,43
+Left Posterior,43
+Left Rostral Anterior,44
+Right Caudal Anterior,44
+Left Thalamus,45
+Right Ventral Diencephalon,45
+Right Thalamus,46
+Left Ventral Diencephalon,46
