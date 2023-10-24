@@ -20,16 +20,22 @@ Our study also aimed to utilise resulting summary reports for highlighting both 
 
 ## Ontology
 Aligning with the Foundational Model of Anatomy (FMA) framework, we developed a Web ontology language (OWL) based ontology, 
-which captures membership relationships among neuroanatomical regions using the Protégé modeling software [1,2,3].
+which captures membership relationships among neuroanatomical regions, using the Protégé modeling software.
 
 Following image illusrates the OWL/Protégé ontology that was built.
-![OWL/Protégé ontology](/Images/0000-Fig1-b.png)
+<p align="center">
+  <img src="/Images/0000-Fig1-b.png" width="348">
+</p>
+<![OWL/Protégé ontology](/Images/0000-Fig1-b.png)>
 
 ## Summary Plots
-Using Plotly, we created a summary visualzation tool [4]. 
+Using Plotly, we created a summary visualzation tool. 
 We use a custom colour scale, where lower levels of deviations were represented by shades of yellow. 
 While the higher levels of volumetric deviations were represented in orange and red. 
 The summar plot was created to be symetric across the vertical axis, this reflects the symertical brain strcture across the coronal and axial planes. 
 
 Sample summary plot for an ADNI patitent with Alzheimer’s disease (AD).
-![Summary Plot](/Images/0000-Fig3-a.png)
+<p align="center">
+  <img src="/Images/0000-Fig3-a.png" width="548">
+</p>
+<![Summary Plot](/Images/0000-Fig3-a.png)>
