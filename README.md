@@ -18,22 +18,22 @@ and visual summary reports** to enhance examination of a person's atrophy profil
 Our study also aimed to utilise resulting summary reports for highlighting both group characteristics of disease stages as well as single-subject data.
 
 ## Ontology
-Aligning with the Foundational Model of Anatomy (FMA) framework, we developed a Web ontology language (OWL) based ontology, 
-which captures membership relationships among neuroanatomical regions, using the Protégé modeling software.
+Inspired by the Foundational Model of Anatomy (FMA), we developed a web ontology language (OWL)-based ontology, 
+which captures relationships among neuroanatomical regions, using the Protégé modeling software. The ontology includes all ROIs segmented by the FastSurferCNN software.
 
-Following image illusrates the OWL/Protégé ontology that was built.
+The following image illusrates the resulting OWL/Protégé ontology:
 <p align="center">
   <img src="/Images/0000-Fig1-b.png" width="348">
 </p>
 <![OWL/Protégé ontology](/Images/0000-Fig1-b.png)>
 
 ## Summary Plots
-Using Plotly, we created a summary visualzation tool. 
+Using the Plotly library and owlready2 Pyhon package, we developed an interactive visualization framework to derive volume deviation summary plots. 
 We use a custom colour scale, where lower levels of deviations were represented by shades of yellow. 
-While the higher levels of volumetric deviations were represented in orange and red. 
-The summar plot was created to be symetric across the vertical axis, this reflects the symertical brain strcture across the coronal and axial planes. 
+Higher levels of volumetric deviations were represented in orange and red. 
+The summary plot was designed to be symetric across the vertical axis, this reflects the symmetrical brain structure of the left and right hemisphere.
 
-Sample summary plot for an ADNI patitent with Alzheimer’s disease (AD).
+A sample summary plot for an ADNI participant with mild dementia due to Alzheimer’s disease (AD) is shown below:
 <p align="center">
   <img src="/Images/0000-Fig3-a.png" width="548">
 </p>
