@@ -38,3 +38,12 @@ A sample summary plot for an ADNI participant with mild dementia due to Alzheime
   <img src="/Images/0000-Fig3-a.png" width="548">
 </p>
 <![Summary Plot](/Images/0000-Fig3-a.png)>
+
+## Citation
+```bibtex
+@misc{Singh2024Onto,
+    author = {Singh, Devesh and Dyrba, Martin and others},
+    title = {A computational ontology and visualization framework for the visual comparison of brain atrophy profiles},
+    year = {2024},
+}
+```
