@@ -3,7 +3,7 @@ Here we visualise mean-group and single-subject atrophy profiles.
 
 ## Mean Group Summary Charts
 
-**Healthy Control (HC) | Mild Cognitive Impairment (MCI)| Dementia Due to Alzheimer’s Disease (AD)**
+**Healthy Control (HC)  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Mild Cognitive Impairment (MCI)  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Dementia Due to Alzheimer’s Disease (AD)**
 
 <p float="left">
   <img src="/Results/All_CN_mean_w_Sunburst.png" width="330" />
@@ -11,8 +11,7 @@ Here we visualise mean-group and single-subject atrophy profiles.
   <img src="/Results/All_AD_mean_w_Sunburst.png" width="330" />
 </p>
 
-
-
+[Click: Interactive CN Plot](https://htmlpreview.github.io/?https://github.com/martindyrba/CompOntoVisFramework/blob/master/Results/All_CN_mean_w_Sunburst.html) &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; [Click: Interactive MCI Plot](https://htmlpreview.github.io/?https://github.com/martindyrba/CompOntoVisFramework/blob/master/Results/All_MCI_mean_w_Sunburst.html) &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; [Click: Interactive AD Plot](https://htmlpreview.github.io/?https://github.com/martindyrba/CompOntoVisFramework/blob/master/Results/All_AD_mean_w_Sunburst.html)
 
 ## Single Subject Summary Charts
 <p align="center">
@@ -20,4 +19,4 @@ Here we visualise mean-group and single-subject atrophy profiles.
 </p>
 <![Summary Plot for ANDI sample 6650](/Results/6650_ADNI3_mean_w_Sunburst.png)>
 
-[Summary Plot for ANDI sample 6650, interactive HTML](https://htmlpreview.github.io/?https://github.com/martindyrba/CompOntoVisFramework/blob/master/Results/6650_ADNI3_mean_w_Sunburst.html)
+[Click here for interactive summary Plot for ANDI sample 6650](https://htmlpreview.github.io/?https://github.com/martindyrba/CompOntoVisFramework/blob/master/Results/6650_ADNI3_mean_w_Sunburst.html)
