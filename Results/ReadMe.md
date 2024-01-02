@@ -19,4 +19,4 @@ Here we visualise mean-group and single-subject atrophy profiles.
 </p>
 <![Summary Plot for ANDI sample 6650](/Results/6650_ADNI3_mean_w_Sunburst.png)>
 
-[Click: Interactive Summary Plot for ANDI Sample #6650](https://htmlpreview.github.io/?https://github.com/martindyrba/CompOntoVisFramework/blob/master/Results/6650_ADNI3_mean_w_Sunburst.html)
+[Click: Interactive Summary Plot for ADNI Sample #6650](https://htmlpreview.github.io/?https://github.com/martindyrba/CompOntoVisFramework/blob/master/Results/6650_ADNI3_mean_w_Sunburst.html)
