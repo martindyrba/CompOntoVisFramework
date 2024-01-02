@@ -1,9 +1,17 @@
 # Results
 Here we visualise mean-group and single-subject atrophy profiles.
 
-## Group Mean Summary Charts
+## Mean Group Summary Charts
 
 **Healthy Control (HC) | Mild Cognitive Impairment (MCI)| Dementia Due to Alzheimer’s Disease (AD)**
+
+<p float="left">
+  <img src="/Results/All_CN_mean_w_Sunburst.png" width="330" />
+  <img src="/Results/All_MCI_mean_w_Sunburst.png" width="330" /> 
+  <img src="/Results/All_AD_mean_w_Sunburst.png" width="330" />
+</p>
+
+
 
 
 ## Single Subject Summary Charts
