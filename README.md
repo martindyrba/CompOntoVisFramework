@@ -39,6 +39,8 @@ A sample summary plot for an ADNI participant with mild dementia due to Alzheime
 </p>
 <![Summary Plot](/Images/0000-Fig3-a.png)>
 
+[Click: Interactive Summary Plot for ADNI Sample](https://htmlpreview.github.io/?https://github.com/martindyrba/CompOntoVisFramework/blob/master/Results/6650_ADNI3_mean_w_Sunburst.html)
+
 ## Citation
 ```bibtex
 @misc{Singh2024Onto,
