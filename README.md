@@ -35,7 +35,7 @@ The summary plot was designed to be symetric across the vertical axis, this refl
 
 A sample summary plot for an ADNI participant with mild dementia due to Alzheimer’s disease (AD) is shown below:
 <p align="center">
-  <img src="/Images/0000-Fig3-a.png" width="548">
+  <img src="/Results/6650_ADNI3_mean_w_Sunburst_rgy.png" width="548">
 </p>
 <![Summary Plot](/Images/0000-Fig3-a.png)>
 
