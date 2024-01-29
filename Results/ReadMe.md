@@ -15,7 +15,7 @@ Here we visualise mean-group and single-subject atrophy profiles.
 
 ## Single Subject Summary Charts
 <p align="center">
-  <img src="/Results/6650_ADNI3_mean_w_Sunburst_ryg.png" width="548">
+  <img src="/Results/6650_ADNI3_mean_w_Sunburst_rgy.png" width="548">
 </p>
 <![Summary Plot for ANDI sample 6650](/Results/6650_ADNI3_mean_w_Sunburst.png)>
 
