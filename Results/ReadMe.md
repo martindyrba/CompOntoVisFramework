@@ -11,7 +11,7 @@ Here we visualise mean-group and single-subject atrophy profiles.
   <img src="/Results/All_AD_mean_w_Sunburst.png" width="330" />
 </p>
 
-[Click: Interactive CN Plot](https://htmlpreview.github.io/?https://github.com/martindyrba/CompOntoVisFramework/blob/master/Results/All_CN_mean_w_Sunburst.html) &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; [Click: Interactive MCI Plot](https://htmlpreview.github.io/?https://github.com/martindyrba/CompOntoVisFramework/blob/master/Results/All_MCI_mean_w_Sunburst.html) &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; [Click: Interactive AD Plot](https://htmlpreview.github.io/?https://github.com/martindyrba/CompOntoVisFramework/blob/master/Results/All_AD_mean_w_Sunburst.html)
+[Click: Interactive CN Plot](https://htmlpreview.github.io/?https://github.com/martindyrba/CompOntoVisFramework/blob/master/Results/All_CN_mean_w_Sunburst_ryg.html) &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; [Click: Interactive MCI Plot](https://htmlpreview.github.io/?https://github.com/martindyrba/CompOntoVisFramework/blob/master/Results/All_MCI_mean_w_Sunburst_ryg.html) &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; [Click: Interactive AD Plot](https://htmlpreview.github.io/?https://github.com/martindyrba/CompOntoVisFramework/blob/master/Results/All_AD_mean_w_Sunburst_ryg.html)
 
 ## Single Subject Summary Charts
 <p align="center">
@@ -19,4 +19,4 @@ Here we visualise mean-group and single-subject atrophy profiles.
 </p>
 <![Summary Plot for ANDI sample 6650](/Results/6650_ADNI3_mean_w_Sunburst.png)>
 
-[Click: Interactive Summary Plot for ADNI Sample #6650](https://htmlpreview.github.io/?https://github.com/martindyrba/CompOntoVisFramework/blob/master/Results/6650_ADNI3_mean_w_Sunburst.html)
+[Click: Interactive Summary Plot for ADNI Sample #6650](https://htmlpreview.github.io/?https://github.com/martindyrba/CompOntoVisFramework/blob/master/Results/6650_ADNI3_mean_w_Sunburst_ryg.html)
