@@ -14,7 +14,7 @@
         <protege:defaultLanguage>English [en]</protege:defaultLanguage>
         <dc:creator>Devesh Singh</dc:creator>
         <dc:creator>Achim Reiz</dc:creator>
-		<dc:creator>Jaya Chandra Terli</dc:creator>
+        <dc:creator>Jaya Chandra Terli</dc:creator>
         <dc:creator>Martin Dyrba</dc:creator>
         <dc:description>An ontology for representing neuroanatomical concepts alligned with the Desikan–Killiany–Tourville (DKT) atlas. Our ontology explicitly encodes a priori neuroanatomical relationships amongst brain regions using hierarchical relationships, and implements computationally efficient calculation of volumetric deviation.</dc:description>
         <dc:title>A Computational Ontology Framework for the Synthesis of Multi-Level Volumetric Reports for Brain MRI scans</dc:title>
@@ -228,7 +228,9 @@
 
     <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Brain_Region">
         <owl:disjointWith rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Subject"/>
-        <rdfs:comment>see https://en.wikipedia.org/wiki/Human_brain</rdfs:comment>
+        <rdfs:comment>The brain is the central organ of the human nervous system. The brain consists of the cerebrum, the brainstem and the cerebellum.</rdfs:comment>
+        <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma55676</rdfs:seeAlso>
+        <rdfs:seeAlso>http://radlex.org/RID/RID13853</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -238,10 +240,9 @@
     <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Brainstem">
         <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Brain_Region"/>
         <rdf:ID>Brain-Stem</rdf:ID>
-        <rdfs:comment>The brain stem is the portion of the central nervous system consisting of the mid-brain and the hindbrain.</rdfs:comment>
+        <rdfs:comment>The brainstem is the part of the brain that connects the cerebral hemispheres with the spinal cord.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma79876</rdfs:seeAlso>
         <rdfs:seeAlso>http://radlex.org/RID/RID6677</rdfs:seeAlso>
-        <rdfs:seeAlso>http://scai.fraunhofer.de/AlzheimerOntology#brainstem</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -251,7 +252,7 @@
     <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#CSF">
         <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Cerebrospinal_Fluid"/>
         <rdf:ID>CSF</rdf:ID>
-        <rdfs:comment>The cerebrospinal fluid is a clear, colorless fluid, which is secreted by the choroid plexuses of the lateral, third and fourth ventricles into the ventricular system of the brain and spinal cord and distributed via the apertures of Luschka and Magendie to the subarachnoid space.</rdfs:comment>
+        <rdfs:comment>This region defines a portion of cerebrospinal fluid, which is the upper part of the third ventricle and is located between the lateral ventricles and the lower part of the third ventricle.</rdfs:comment>
     </owl:Class>
     
 
@@ -273,7 +274,6 @@
         <rdfs:comment>Segment of neuraxis that has as its parts the cerebellar cortex, cerebellar nuclear complex and cerebellar white matter. Examples: There is only one cerebellum.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma67944</rdfs:seeAlso>
         <rdfs:seeAlso>http://radlex.org/RID/RID6815</rdfs:seeAlso>
-        <rdfs:seeAlso>http://scai.fraunhofer.de/AlzheimerOntology#cerebellum</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -282,7 +282,7 @@
 
     <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Cerebrospinal_Fluid">
         <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Brain_Region"/>
-        <rdfs:comment>The cerebrospinal fluid is a clear, colorless fluid, which is secreted by the choroid plexuses of the lateral, third and fourth ventricles into the ventricular system of the brain and spinal cord and distributed via the apertures of Luschka and Magendie to the subarachnoid space.</rdfs:comment>
+        <rdfs:comment>The cerebrospinal fluid is a clear, colorless fluid, which is secreted by the choroid plexuses of the lateral, third and fourth ventricles into the ventricular system of the brain and spinal cord and is also distributed to the subarachnoid space.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma20935</rdfs:seeAlso>
         <rdfs:seeAlso>http://radlex.org/RID/RID1544</rdfs:seeAlso>
     </owl:Class>
@@ -293,8 +293,9 @@
 
     <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Cerebrum">
         <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Brain_Region"/>
-        <rdfs:comment>Subdivision of the brain derived from the secondary prosencephalon and consisting of the pallium and the subpallium; mostly used in adjectives such as cerebral hemisphere.</rdfs:comment>
-        <rdfs:seeAlso>http://api.brain-map.org/api/v2/data/Structure/567</rdfs:seeAlso>
+        <rdfs:comment>Subdivision of the brain derived from the secondary prosencephalon or telencephalon. Contains the cerebral cortex, cerebral white matter, as well as several subcortical structures.</rdfs:comment>
+        <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma62000</rdfs:seeAlso>
+        <rdfs:seeAlso>http://radlex.org/RID/RID6437</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -369,7 +370,9 @@
     <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Cerebellum">
         <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Cerebellum"/>
         <owl:disjointWith rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Cerebellum"/>
-        <rdfs:comment>Left segment of neuraxis that has as its parts the cerebellar cortex, cerebellar nuclear complex and cerebellar white matter. Examples: There is only one cerebellum.</rdfs:comment>
+        <rdfs:comment>Left segment of neuraxis that has as its parts the cerebellar cortex, cerebellar nuclear complex and cerebellar white matter.</rdfs:comment>
+        <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma83877</rdfs:seeAlso>
+        <rdfs:seeAlso>http://radlex.org/RID/RID18312</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -415,7 +418,7 @@
 
     <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Cerebrum">
         <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Cerebrum"/>
-        <rdfs:comment>Left subdivision of the brain derived from the secondary prosencephalon and consisting of the pallium and the subpallium; mostly used in adjectives such as cerebral hemisphere.</rdfs:comment>
+        <rdfs:comment>Left subdivision of the brain derived from the secondary prosencephalon or telencephalon. Contains the cerebral cortex, cerebral white matter, as well as several subcortical structures.</rdfs:comment>
     </owl:Class>
     
 
@@ -459,7 +462,7 @@
 
     <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Diencephalon">
         <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Cerebrum"/>
-        <rdfs:comment>Organ component of neuraxis that has as its parts the epithalamus, thalamus, hypothalamus, subthalamus. There is only one diencephalon.</rdfs:comment>
+        <rdfs:comment>Organ component of neuraxis that has as its parts the epithalamus, thalamus, hypothalamus, subthalamus.</rdfs:comment>
     </owl:Class>
     
 
@@ -516,7 +519,7 @@
     <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Inf-Lat-Vent">
         <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Cerebrospinal_Fluid"/>
         <rdf:ID>Left-Inf-Lat-Vent</rdf:ID>
-        <rdfs:comment>The inferior lateral ventricle refers to the lower portion of the lateral ventricle within the brain. It is the largest component of the lateral ventricle. It begins at the posterior end of the central region, and runs anteroinferiorly into the temporal lobe.</rdfs:comment>
+        <rdfs:comment>The inferior lateral ventricle refers to the lower portion of the lateral ventricle within the brain.</rdfs:comment>
     </owl:Class>
     
 
@@ -550,7 +553,7 @@
     <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Insula">
         <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Cerebrum"/>
         <rdf:ID>ctx-lh-insula</rdf:ID>
-        <rdfs:comment>Lobe of cerebral hemispheere located in the depths of the lateral fissure and is covered by portions of the frontal, parietal and temporal lobes.</rdfs:comment>
+        <rdfs:comment>Lobe of cerebral hemisphere located in the depths of the lateral fissure and is covered by portions of the frontal, parietal and temporal lobes.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72978</rdfs:seeAlso>
         <rdfs:seeAlso>http://radlex.org/RID/RID13871</rdfs:seeAlso>
     </owl:Class>
@@ -670,6 +673,8 @@
         <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Basal_Ganglia"/>
         <rdf:ID>Left-Pallidum</rdf:ID>
         <rdfs:comment>The globus pallidus is an inner, pale-yellow region within the lenticular nucleus and serves as a central component in the telencephalon, fulfilling a functional role within the basal ganglia.</rdfs:comment>
+        <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72831</rdfs:seeAlso>
+        <rdfs:seeAlso>http://radlex.org/RID/RID21018</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -715,6 +720,8 @@
         <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Frontal_Lobe"/>
         <rdf:ID>ctx-lh-parsopercularis</rdf:ID>
         <rdfs:comment>The pars opercularis refers to the vertically oriented fold of the inferior frontal gyrus in the frontal lobe of the brain. It is located at rear of the three cortical segments that form the inferior frontal gyrus. It plays a significant role in the production of speech.</rdfs:comment>
+ <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72753</rdfs:seeAlso>
+        <rdfs:seeAlso>http://radlex.org/RID/RID13978</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -725,6 +732,8 @@
         <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Frontal_Lobe"/>
         <rdf:ID>ctx-lh-parsorbitalis</rdf:ID>
         <rdfs:comment>The pars orbitalis refers to the most rostral portion of the inferior frontal gyrus in the frontal lobe of the brain. It plays a role in the language processing network of the brain.</rdfs:comment>
+ <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72755</rdfs:seeAlso>
+        <rdfs:seeAlso>http://radlex.org/RID/RID13981</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -735,6 +744,8 @@
         <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Frontal_Lobe"/>
         <rdf:ID>ctx-lh-parstriangularis</rdf:ID>
         <rdfs:comment>The pars triangularis refers to the triangular shaped cortical region of the inferior frontal gyrus in the frontal lobe of the brain. It sits in between pars orbitalis and pars opercularis. It is well known in its involvement in speech production.</rdfs:comment>
+ <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72751</rdfs:seeAlso>
+        <rdfs:seeAlso>http://radlex.org/RID/RID13975</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -858,7 +869,7 @@
     <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Superior_Temporal">
         <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Temporal_Lobe"/>
         <rdf:ID>ctx-lh-superiortemporal</rdf:ID>
-        <rdfs:comment>Superior temoral lobe is a gyrus in the temporal lobe that contains parts of the auditory cortex. It includes Wernicke&apos;s area, which is the major area involved in the comprehension of language.</rdfs:comment>
+        <rdfs:comment>Superior temoral lobe is a gyrus in the temporal lobe that contains parts of the auditory cortex. It includes Wernicke's area, which is the major area involved in the comprehension of language.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72684</rdfs:seeAlso>
         <rdfs:seeAlso>http://radlex.org/RID/RID13889</rdfs:seeAlso>
     </owl:Class>
@@ -894,7 +905,7 @@
         <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Diencephalon"/>
         <owl:disjointWith rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Ventral_Diencephalon"/>
         <rdf:ID>Left-Thalamus-Proper</rdf:ID>
-        <rdfs:comment>Situated in brain&apos;s central region, thalamus is largely composed of nuclei, which relay sensory, motor and limbic information to the cerebral cortex and subpallial structures.</rdfs:comment>
+        <rdfs:comment>Situated in brain's central region, thalamus is largely composed of nuclei, which relay sensory, motor and limbic information to the cerebral cortex and subpallial structures.</rdfs:comment>
     </owl:Class>
     
 
@@ -904,7 +915,7 @@
     <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Transverse_Temporal">
         <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Temporal_Lobe"/>
         <rdf:ID>ctx-lh-transversetemporal</rdf:ID>
-        <rdfs:comment>Commonly referred to as Heschl&apos;s gyri; Transverse temporal gyri constitute a set of gyri situated deep within the lateral sulcus in the temporal lobe. These gyri typically house the primary auditory cortex.</rdfs:comment>
+        <rdfs:comment>Commonly referred to as Heschl's gyri; Transverse temporal gyri constitute a set of gyri situated deep within the lateral sulcus in the temporal lobe. These gyri typically house the primary auditory cortex.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma273675</rdfs:seeAlso>
         <rdfs:seeAlso>http://radlex.org/RID/RID26543</rdfs:seeAlso>
     </owl:Class>
@@ -1010,6 +1021,8 @@
     <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Cerebellum">
         <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Cerebellum"/>
         <rdfs:comment>Right segment of neuraxis that has as its parts the cerebellar cortex, cerebellar nuclear complex and cerebellar white matter. Examples: There is only one cerebellum.</rdfs:comment>
+        <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma83876</rdfs:seeAlso>
+        <rdfs:seeAlso>http://radlex.org/RID/RID18313</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -1055,7 +1068,7 @@
 
     <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Cerebrum">
         <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Cerebrum"/>
-        <rdfs:comment>Right subdivision of the brain derived from the secondary prosencephalon and consisting of the pallium and the subpallium; mostly used in adjectives such as cerebral hemisphere.</rdfs:comment>
+        <rdfs:comment>Right subdivision of the brain derived from the secondary prosencephalon or telencephalon. Contains the cerebral cortex, cerebral white matter, as well as several subcortical structures.</rdfs:comment>
     </owl:Class>
     
 
@@ -1156,7 +1169,7 @@
     <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Inf-Lat-Vent">
         <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Cerebrospinal_Fluid"/>
         <rdf:ID>Right-Inf-Lat-Vent</rdf:ID>
-        <rdfs:comment>The inferior lateral ventricle refers to the lower portion of the lateral ventricle within the brain. It is the largest component of the lateral ventricle. It begins at the posterior end of the central region, and runs anteroinferiorly into the temporal lobe.</rdfs:comment>
+        <rdfs:comment>The inferior lateral ventricle refers to the lower portion of the lateral ventricle within the brain.</rdfs:comment>
     </owl:Class>
     
 
@@ -1310,6 +1323,8 @@
         <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Basal_Ganglia"/>
         <rdf:ID>Right-Pallidum</rdf:ID>
         <rdfs:comment>The globus pallidus is an inner, pale-yellow region within the lenticular nucleus and serves as a central component in the telencephalon, fulfilling a functional role within the basal ganglia.</rdfs:comment>
+        <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72830</rdfs:seeAlso>
+        <rdfs:seeAlso>http://radlex.org/RID/RID21017</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -1355,6 +1370,8 @@
         <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Frontal_Lobe"/>
         <rdf:ID>ctx-rh-parsopercularis</rdf:ID>
         <rdfs:comment>The pars opercularis refers to the vertically oriented fold of the inferior frontal gyrus in the frontal lobe of the brain. It is located at rear of the three cortical segments that form the inferior frontal gyrus. It plays a significant role in the production of speech.</rdfs:comment>
+ <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72752</rdfs:seeAlso>
+        <rdfs:seeAlso>http://radlex.org/RID/RID13977</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -1365,6 +1382,8 @@
         <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Frontal_Lobe"/>
         <rdf:ID>ctx-rh-parsorbitalis</rdf:ID>
         <rdfs:comment>The pars orbitalis refers to the most rostral portion of the inferior frontal gyrus in the frontal lobe of the brain. It plays a role in the language processing network of the brain.</rdfs:comment>
+ <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72754</rdfs:seeAlso>
+        <rdfs:seeAlso>http://radlex.org/RID/RID13980</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -1375,6 +1394,8 @@
         <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Frontal_Lobe"/>
         <rdf:ID>ctx-rh-parstriangularis</rdf:ID>
         <rdfs:comment>The pars triangularis refers to the triangular shaped cortical region of the inferior frontal gyrus in the frontal lobe of the brain. It sits in between pars orbitalis and pars opercularis. It is well known in its involvement in speech production.</rdfs:comment>
+ <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72750</rdfs:seeAlso>
+        <rdfs:seeAlso>http://radlex.org/RID/RID13974</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -1498,7 +1519,7 @@
     <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Superior_Temporal">
         <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Temporal_Lobe"/>
         <rdf:ID>ctx-rh-superiortemporal</rdf:ID>
-        <rdfs:comment>Superior temoral lobe is a gyrus in the temporal lobe that contains parts of the auditory cortex. It includes Wernicke&apos;s area, which is the major area involved in the comprehension of language.</rdfs:comment>
+        <rdfs:comment>Superior temoral lobe is a gyrus in the temporal lobe that contains parts of the auditory cortex. It includes Wernicke's area, which is the major area involved in the comprehension of language.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72683</rdfs:seeAlso>
         <rdfs:seeAlso>http://radlex.org/RID/RID13888</rdfs:seeAlso>
     </owl:Class>
@@ -1534,7 +1555,7 @@
         <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Diencephalon"/>
         <owl:disjointWith rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Ventral_Diencephalon"/>
         <rdf:ID>Right-Thalamus-Proper</rdf:ID>
-        <rdfs:comment>Situated in brain&apos;s central region, thalamus is largely composed of nuclei, which relay sensory, motor and limbic information to the cerebral cortex and subpallial structures.</rdfs:comment>
+        <rdfs:comment>Situated in brain's central region, thalamus is largely composed of nuclei, which relay sensory, motor and limbic information to the cerebral cortex and subpallial structures.</rdfs:comment>
     </owl:Class>
     
 
@@ -1544,7 +1565,7 @@
     <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Transverse_Temporal">
         <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Temporal_Lobe"/>
         <rdf:ID>ctx-rh-transversetemporal</rdf:ID>
-        <rdfs:comment>Commonly referred to as Heschl&apos;s gyri; Transverse temporal gyri constitute a set of gyri situated deep within the lateral sulcus in the temporal lobe. These gyri typically house the primary auditory cortex.</rdfs:comment>
+        <rdfs:comment>Commonly referred to as Heschl's gyri; Transverse temporal gyri constitute a set of gyri situated deep within the lateral sulcus in the temporal lobe. These gyri typically house the primary auditory cortex.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma273673</rdfs:seeAlso>
         <rdfs:seeAlso>http://radlex.org/RID/RID26542</rdfs:seeAlso>
     </owl:Class>
@@ -1822,5 +1843,5 @@ oblongata.</rdfs:comment>
 
 
 
-<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
 
