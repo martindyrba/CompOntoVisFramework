@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer"
-     xml:base="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer"
+<rdf:RDF xmlns="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer"
+     xml:base="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -9,12 +9,13 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#">
-    <owl:Ontology rdf:about="https://explaination.net/tree-structure-brain-anatomy-FastSurfer">
-        <owl:versionIRI rdf:resource="https://explaination.net/tree-structure-brain-anatomy-FastSurfer/2.0.0"/>
+    <owl:Ontology rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer">
+        <owl:versionIRI rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer/2.0.0"/>
         <protege:defaultLanguage>English [en]</protege:defaultLanguage>
-        <dc:creator>Achim Reiz</dc:creator>
         <dc:creator>Devesh Singh</dc:creator>
-        <dc:creator>Dr. Martin Dyrba</dc:creator>
+        <dc:creator>Achim Reiz</dc:creator>
+		<dc:creator>Jaya Chandra Terli</dc:creator>
+        <dc:creator>Martin Dyrba</dc:creator>
         <dc:description>An ontology for representing neuroanatomical concepts alligned with the Desikan–Killiany–Tourville (DKT) atlas. Our ontology explicitly encodes a priori neuroanatomical relationships amongst brain regions using hierarchical relationships, and implements computationally efficient calculation of volumetric deviation.</dc:description>
         <dc:title>A Computational Ontology Framework for the Synthesis of Multi-Level Volumetric Reports for Brain MRI scans</dc:title>
         <terms:license>MTI license: https://github.com/martindyrba/CompOntoVisFramework/blob/master/LICENSE</terms:license>
@@ -80,24 +81,24 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#belongsToSubject -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#belongsToSubject -->
 
-    <owl:ObjectProperty rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#belongsToSubject">
-        <owl:inverseOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#hasRegions"/>
+    <owl:ObjectProperty rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#belongsToSubject">
+        <owl:inverseOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#hasRegions"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Brain_Region"/>
-        <rdfs:range rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Subject"/>
+        <rdfs:domain rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Brain_Region"/>
+        <rdfs:range rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Subject"/>
         <rdfs:comment>A membership relation between a neuroanatomical region (ROI) and a suject, i.e. patient. It reflects the many-to-one relational mapping between the ROI instances and the subject instance.</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#hasRegions -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#hasRegions -->
 
-    <owl:ObjectProperty rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#hasRegions">
+    <owl:ObjectProperty rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#hasRegions">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Subject"/>
-        <rdfs:range rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Brain_Region"/>
+        <rdfs:domain rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Subject"/>
+        <rdfs:range rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Brain_Region"/>
         <rdfs:comment>A mebership relationship between a whole region and its parts. This is logically equivalent to the ‘part-of’ relations reported in many other ontology studies.</rdfs:comment>
     </owl:ObjectProperty>
     
@@ -114,88 +115,88 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#age -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#age -->
 
-    <owl:DatatypeProperty rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#age">
+    <owl:DatatypeProperty rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#age">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Subject"/>
+        <rdfs:domain rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Subject"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
-        <owl:propertyDisjointWith rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#eTIV"/>
-        <owl:propertyDisjointWith rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#fieldStrength"/>
-        <owl:propertyDisjointWith rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#sex"/>
-        <owl:propertyDisjointWith rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#subjectID"/>
+        <owl:propertyDisjointWith rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#eTIV"/>
+        <owl:propertyDisjointWith rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#fieldStrength"/>
+        <owl:propertyDisjointWith rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#sex"/>
+        <owl:propertyDisjointWith rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#subjectID"/>
         <rdfs:comment>The age of each participant, measured (in years) at the time of scan.</rdfs:comment>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#eTIV -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#eTIV -->
 
-    <owl:DatatypeProperty rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#eTIV">
+    <owl:DatatypeProperty rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#eTIV">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Subject"/>
+        <rdfs:domain rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Subject"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
-        <owl:propertyDisjointWith rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#fieldStrength"/>
-        <owl:propertyDisjointWith rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#sex"/>
-        <owl:propertyDisjointWith rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#subjectID"/>
+        <owl:propertyDisjointWith rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#fieldStrength"/>
+        <owl:propertyDisjointWith rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#sex"/>
+        <owl:propertyDisjointWith rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#subjectID"/>
         <rdfs:comment>eTIV stands for estimated total intracranial volume or brain size. Is measured in cubic millimetre, mm3. You can find further details at: https://surfer.nmr.mgh.harvard.edu/fswiki/eTIV</rdfs:comment>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#fieldStrength -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#fieldStrength -->
 
-    <owl:DatatypeProperty rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#fieldStrength">
+    <owl:DatatypeProperty rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#fieldStrength">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Subject"/>
+        <rdfs:domain rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Subject"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
-        <owl:propertyDisjointWith rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#sex"/>
-        <owl:propertyDisjointWith rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#subjectID"/>
+        <owl:propertyDisjointWith rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#sex"/>
+        <owl:propertyDisjointWith rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#subjectID"/>
         <rdfs:comment>Field strength refers to the magnetic field strength of the magnet used in the MRI machine, and is measured in teslas (T).</rdfs:comment>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#sex -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#sex -->
 
-    <owl:DatatypeProperty rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#sex">
+    <owl:DatatypeProperty rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#sex">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Subject"/>
+        <rdfs:domain rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Subject"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
-        <owl:propertyDisjointWith rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#subjectID"/>
+        <owl:propertyDisjointWith rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#subjectID"/>
         <rdfs:comment>Binarised variable, representing biological sex of the participants. Value 0 represents a male participant and the value 1 represents a female participant.</rdfs:comment>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#subjectID -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#subjectID -->
 
-    <owl:DatatypeProperty rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#subjectID">
+    <owl:DatatypeProperty rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#subjectID">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Subject"/>
+        <rdfs:domain rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Subject"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment>An unique identifier for each participant in out study. It is composed as &lt;CohortCode&gt;_&lt;RID&gt;, where CohortCode represents one of the six data cohorts used in our study [ADNI, AIBL, EDSD, DELCODE, DESCRIBE, NIFD] and RID represents a unique identifier within each cohort. For example &apos;ADNI_6598&apos; represents a participant with RID 6598 from the ADNI data cohort.</rdfs:comment>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#volume -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#volume -->
 
-    <owl:DatatypeProperty rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#volume">
+    <owl:DatatypeProperty rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#volume">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Brain_Region"/>
+        <rdfs:domain rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Brain_Region"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
-        <owl:propertyDisjointWith rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#z"/>
+        <owl:propertyDisjointWith rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#z"/>
         <rdfs:comment>The volume associated with each ROI, as computed by the segmentation pipeline. Is measured in cubic millimetre, mm3.</rdfs:comment>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#z -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#z -->
 
-    <owl:DatatypeProperty rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#z">
+    <owl:DatatypeProperty rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#z">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Brain_Region"/>
+        <rdfs:domain rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Brain_Region"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
         <rdfs:comment>‘z’ is used as shorthand for w-score in units. It measures the volumetric deviation from the healthy control levels for each ROI. This metric uses a linear regression model to control for meta-variables while calculating the volumetric deviation.</rdfs:comment>
     </owl:DatatypeProperty>
@@ -213,29 +214,29 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Anterior -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Anterior -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Anterior">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Corpus_Callosum"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Anterior">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Corpus_Callosum"/>
         <rdf:ID>CC_Anterior</rdf:ID>
         <rdfs:comment>The front part of the corpus callosum, connecting prefrontal and anterior frontal regions between the left and right cerebral hemispheres, enabling coordination in decision making and complex tasks.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Brain_Region -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Brain_Region -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Brain_Region">
-        <owl:disjointWith rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Subject"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Brain_Region">
+        <owl:disjointWith rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Subject"/>
         <rdfs:comment>see https://en.wikipedia.org/wiki/Human_brain</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Brainstem -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Brainstem -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Brainstem">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Brain_Region"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Brainstem">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Brain_Region"/>
         <rdf:ID>Brain-Stem</rdf:ID>
         <rdfs:comment>The brain stem is the portion of the central nervous system consisting of the mid-brain and the hindbrain.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma79876</rdfs:seeAlso>
@@ -245,30 +246,30 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#CSF -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#CSF -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#CSF">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Cerebrospinal_Fluid"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#CSF">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Cerebrospinal_Fluid"/>
         <rdf:ID>CSF</rdf:ID>
         <rdfs:comment>The cerebrospinal fluid is a clear, colorless fluid, which is secreted by the choroid plexuses of the lateral, third and fourth ventricles into the ventricular system of the brain and spinal cord and distributed via the apertures of Luschka and Magendie to the subarachnoid space.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Central -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Central -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Central">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Corpus_Callosum"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Central">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Corpus_Callosum"/>
         <rdf:ID>CC_Central</rdf:ID>
         <rdfs:comment>The middle section of the corpus callosum, linking motor and sensory areas in the central brain regions, supporting integrated control of voluntary movements and sensory processing.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Cerebellum -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Cerebellum -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Cerebellum">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Brain_Region"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Cerebellum">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Brain_Region"/>
         <rdfs:comment>Segment of neuraxis that has as its parts the cerebellar cortex, cerebellar nuclear complex and cerebellar white matter. Examples: There is only one cerebellum.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma67944</rdfs:seeAlso>
         <rdfs:seeAlso>http://radlex.org/RID/RID6815</rdfs:seeAlso>
@@ -277,10 +278,10 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Cerebrospinal_Fluid -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Cerebrospinal_Fluid -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Cerebrospinal_Fluid">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Brain_Region"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Cerebrospinal_Fluid">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Brain_Region"/>
         <rdfs:comment>The cerebrospinal fluid is a clear, colorless fluid, which is secreted by the choroid plexuses of the lateral, third and fourth ventricles into the ventricular system of the brain and spinal cord and distributed via the apertures of Luschka and Magendie to the subarachnoid space.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma20935</rdfs:seeAlso>
         <rdfs:seeAlso>http://radlex.org/RID/RID1544</rdfs:seeAlso>
@@ -288,20 +289,20 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Cerebrum -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Cerebrum -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Cerebrum">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Brain_Region"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Cerebrum">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Brain_Region"/>
         <rdfs:comment>Subdivision of the brain derived from the secondary prosencephalon and consisting of the pallium and the subpallium; mostly used in adjectives such as cerebral hemisphere.</rdfs:comment>
         <rdfs:seeAlso>http://api.brain-map.org/api/v2/data/Structure/567</rdfs:seeAlso>
     </owl:Class>
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Corpus_Callosum -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Corpus_Callosum -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Corpus_Callosum">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#White_Matter"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Corpus_Callosum">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#White_Matter"/>
         <rdfs:comment>The corpus callosum is a dense bundle of nerve fibers facilitating communication between the two cerebral hemispheres. Additionally, it plays a role in coordinating movements, cognitive functions, and visual processes.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma86464</rdfs:seeAlso>
         <rdfs:seeAlso>http://radlex.org/RID/RID6915</rdfs:seeAlso>
@@ -309,10 +310,10 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Amygdala -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Amygdala -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Amygdala">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Temporal_Lobe"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Amygdala">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Temporal_Lobe"/>
         <rdf:ID>Left-Amygdala</rdf:ID>
         <rdfs:comment>Basal ganglion of telencephalon which is an almond-shaped gray mass in the dorsomedial part of the temporal lobe.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72833</rdfs:seeAlso>
@@ -321,40 +322,40 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Basal_Ganglia -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Basal_Ganglia -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Basal_Ganglia">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Cerebrum"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Basal_Ganglia">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Cerebrum"/>
         <rdfs:comment>The basal nuclei or basal ganglia are strictly speaking a group of closely related subpallial cell masses associated to the basal forebrain (the striatum and the pallidum) and to motor control.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma260708</rdfs:seeAlso>
     </owl:Class>
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Caudal_Anterior -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Caudal_Anterior -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Caudal_Anterior">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Cingulate_Gyrus"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Caudal_Anterior">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Cingulate_Gyrus"/>
         <rdf:ID>ctx-lh-caudalanteriorcingulate</rdf:ID>
         <rdfs:comment>The caudal anterior part of the cingulate gyrus is situated at both its posterior and anterior ends, contributing to emotional and cognitive regulation.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Caudal_Middle_Frontal -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Caudal_Middle_Frontal -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Caudal_Middle_Frontal">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Frontal_Lobe"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Caudal_Middle_Frontal">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Frontal_Lobe"/>
         <rdf:ID>ctx-lh-caudalmiddlefrontal</rdf:ID>
         <rdfs:comment>Refers to the posterior part of the middle frontal gyrus in the frontal lobe of the cerebrum. It plays a role in various cognitive functions, including motor planning and executive functions.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Caudate_Nucleus -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Caudate_Nucleus -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Caudate_Nucleus">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Basal_Ganglia"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Caudate_Nucleus">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Basal_Ganglia"/>
         <rdf:ID>Left-Caudate</rdf:ID>
         <rdfs:comment>Nucleus of brain which is an elongated crescent-shaped mass lying parallel and adjacent to the lateral ventricle throughout its extent.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72827</rdfs:seeAlso>
@@ -363,21 +364,21 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Cerebellum -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Cerebellum -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Cerebellum">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Cerebellum"/>
-        <owl:disjointWith rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Cerebellum"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Cerebellum">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Cerebellum"/>
+        <owl:disjointWith rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Cerebellum"/>
         <rdfs:comment>Left segment of neuraxis that has as its parts the cerebellar cortex, cerebellar nuclear complex and cerebellar white matter. Examples: There is only one cerebellum.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Cerebellum_Cortex -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Cerebellum_Cortex -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Cerebellum_Cortex">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Cerebellum"/>
-        <owl:disjointWith rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Cerebellum_White_Matter"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Cerebellum_Cortex">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Cerebellum"/>
+        <owl:disjointWith rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Cerebellum_White_Matter"/>
         <rdf:ID>Left-Cerebellum-Cortex</rdf:ID>
         <rdfs:comment>The cerebellar cortex is composed of a large number of cerebellar folia, forming the various lobules, and consists of three layers, from the outside inwards: (1) the molecular; (2) the Purkinje cell layer; and (3) the granular layer, which borders on the central white matter of the cerebellum.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma277132</rdfs:seeAlso>
@@ -386,10 +387,10 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Cerebellum_White_Matter -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Cerebellum_White_Matter -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Cerebellum_White_Matter">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Cerebellum"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Cerebellum_White_Matter">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Cerebellum"/>
         <rdf:ID>Left-Cerebellum-White-Matter</rdf:ID>
         <rdfs:comment>The white matter located in the left hemisphere of the cerebellum, facilitating communication between various cerebellar regions and connecting with other brain areas to coordinate motor functions and balance.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma274037</rdfs:seeAlso>
@@ -398,10 +399,10 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Cerebral_White_Matter -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Cerebral_White_Matter -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Cerebral_White_Matter">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#White_Matter"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Cerebral_White_Matter">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#White_Matter"/>
         <rdf:ID>Left-Cerebral-White-Matter</rdf:ID>
         <rdfs:comment>The collection of myelinated nerve fibers situated within the left cerebral hemisphere, responsible for transmitting signals between various regions of the left hemisphere and facilitating connectivity with right hemisphere.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma260794</rdfs:seeAlso>
@@ -410,19 +411,19 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Cerebrum -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Cerebrum -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Cerebrum">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Cerebrum"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Cerebrum">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Cerebrum"/>
         <rdfs:comment>Left subdivision of the brain derived from the secondary prosencephalon and consisting of the pallium and the subpallium; mostly used in adjectives such as cerebral hemisphere.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Choroid_Plexus -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Choroid_Plexus -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Choroid_Plexus">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Cerebrospinal_Fluid"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Choroid_Plexus">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Cerebrospinal_Fluid"/>
         <rdf:ID>Left-choroid-plexus</rdf:ID>
         <rdfs:comment>The secretory epithelium and associated blood vessels of the lateral, third and fourth ventricles, which produce cerebrospinal fluid.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma242859</rdfs:seeAlso>
@@ -431,10 +432,10 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Cingulate_Gyrus -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Cingulate_Gyrus -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Cingulate_Gyrus">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Cerebrum"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Cingulate_Gyrus">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Cerebrum"/>
         <rdfs:comment>The cingulate gyrus is a broad belt of cerebral cortex partially encircling the corpus callosum and comprising the cingulate cortex.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72718</rdfs:seeAlso>
         <rdfs:seeAlso>http://radlex.org/RID/RID26563</rdfs:seeAlso>
@@ -442,10 +443,10 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Cuneus -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Cuneus -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Cuneus">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Occipital_Lobe"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Cuneus">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Occipital_Lobe"/>
         <rdf:ID>ctx-lh-cuneus</rdf:ID>
         <rdfs:comment>The cuneus is a wedge shaped segment of the occipital lobe on the medial surface of the cerebral hemisphere between the calcarine and parieto-occipital fissures.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72680</rdfs:seeAlso>
@@ -454,19 +455,19 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Diencephalon -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Diencephalon -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Diencephalon">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Cerebrum"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Diencephalon">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Cerebrum"/>
         <rdfs:comment>Organ component of neuraxis that has as its parts the epithalamus, thalamus, hypothalamus, subthalamus. There is only one diencephalon.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Entorhinal -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Entorhinal -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Entorhinal">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Temporal_Lobe"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Entorhinal">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Temporal_Lobe"/>
         <rdf:ID>ctx-lh-entorhinal</rdf:ID>
         <rdfs:comment>The entorhinal cortex is located in the medial temporal lobe, whose functions include being a widespread network hub for memory, navigation, and the perception of time.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72741</rdfs:seeAlso>
@@ -475,10 +476,10 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Frontal_Lobe -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Frontal_Lobe -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Frontal_Lobe">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Cerebrum"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Frontal_Lobe">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Cerebrum"/>
         <rdfs:comment>Frontal lobe is the anterior-most of five lobes of the cerebral hemisphere. It is bounded by the central sulcus on its posterior border and by the longitudinal cerebral fissure on its medial border.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72970</rdfs:seeAlso>
         <rdfs:seeAlso>http://radlex.org/RID/RID13863</rdfs:seeAlso>
@@ -486,10 +487,10 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Fusiform -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Fusiform -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Fusiform">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Temporal_Lobe"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Fusiform">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Temporal_Lobe"/>
         <rdf:ID>ctx-lh-fusiform</rdf:ID>
         <rdfs:comment>The fusiform gyrus, also known as the lateral occipitotemporal gyrus, is a structure that lies on the basal surface of the temporal and occipital lobes.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72690</rdfs:seeAlso>
@@ -498,10 +499,10 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Hippocampus -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Hippocampus -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Hippocampus">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Temporal_Lobe"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Hippocampus">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Temporal_Lobe"/>
         <rdf:ID>Left-Hippocampus</rdf:ID>
         <rdfs:comment>Gyrus of limbic lobe, each instance of which is convoluted mass of gray matter extending the entire length of the floor of the temporal horn of some lateral ventricle; it is part of some limbic system and plays major roles in short term memory and spatial navigation.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma275024</rdfs:seeAlso>
@@ -510,20 +511,20 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Inf-Lat-Vent -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Inf-Lat-Vent -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Inf-Lat-Vent">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Cerebrospinal_Fluid"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Inf-Lat-Vent">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Cerebrospinal_Fluid"/>
         <rdf:ID>Left-Inf-Lat-Vent</rdf:ID>
         <rdfs:comment>The inferior lateral ventricle refers to the lower portion of the lateral ventricle within the brain. It is the largest component of the lateral ventricle. It begins at the posterior end of the central region, and runs anteroinferiorly into the temporal lobe.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Inferior_Parietal -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Inferior_Parietal -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Inferior_Parietal">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Parietal_Lobe"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Inferior_Parietal">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Parietal_Lobe"/>
         <rdf:ID>ctx-lh-inferiorparietal</rdf:ID>
         <rdfs:comment>The inferior parietal lobule is the lower part of the parietal lobe on the lateral surface of the cerebral hemisphere, below the intraparietal sulcus, and behind the post-central gyrus. It consists of the angular and supramarginal gyri.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma81255</rdfs:seeAlso>
@@ -532,10 +533,10 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Inferior_Temporal -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Inferior_Temporal -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Inferior_Temporal">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Temporal_Lobe"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Inferior_Temporal">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Temporal_Lobe"/>
         <rdf:ID>ctx-lh-inferiortemporal</rdf:ID>
         <rdfs:comment>The inferior temporal gyrus is one of three gyri of the temporal lobe and is located below the middle temporal gyrus, connected behind with the inferior occipital gyrus.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72688</rdfs:seeAlso>
@@ -544,10 +545,10 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Insula -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Insula -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Insula">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Cerebrum"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Insula">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Cerebrum"/>
         <rdf:ID>ctx-lh-insula</rdf:ID>
         <rdfs:comment>Lobe of cerebral hemispheere located in the depths of the lateral fissure and is covered by portions of the frontal, parietal and temporal lobes.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72978</rdfs:seeAlso>
@@ -556,10 +557,10 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Isthmus -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Isthmus -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Isthmus">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Cingulate_Gyrus"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Isthmus">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Cingulate_Gyrus"/>
         <rdf:ID>ctx-lh-isthmuscingulate</rdf:ID>
         <rdfs:comment>The isthmus of the cingulate gyrus is a narrow section that extends from the cingulate gyrus into the temporal lobe. It is situated between the splenium of the corpus callosum and the lingual gyrus, forming a connection between these brain regions.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72749</rdfs:seeAlso>
@@ -568,10 +569,10 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Lateral_Occipital -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Lateral_Occipital -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Lateral_Occipital">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Occipital_Lobe"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Lateral_Occipital">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Occipital_Lobe"/>
         <rdf:ID>ctx-lh-lateraloccipital</rdf:ID>
         <rdfs:comment>The lateral occipital sulcus is a horizontal sulcus that divides the lateral occipital surface into gyri. It is crucial for processing visual information related to object recognition and spatial perception.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72678</rdfs:seeAlso>
@@ -580,10 +581,10 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Lateral_Orbitofrontal -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Lateral_Orbitofrontal -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Lateral_Orbitofrontal">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Frontal_Lobe"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Lateral_Orbitofrontal">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Frontal_Lobe"/>
         <rdf:ID>ctx-lh-lateralorbitofrontal</rdf:ID>
         <rdfs:comment>Found on the lateral frontal surface of orbitofornatal cortex, it regulates emotions related punishments and non-rewards.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72757</rdfs:seeAlso>
@@ -592,10 +593,10 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Lateral_Ventricle -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Lateral_Ventricle -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Lateral_Ventricle">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Cerebrospinal_Fluid"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Lateral_Ventricle">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Cerebrospinal_Fluid"/>
         <rdf:ID>Left-Lateral-Ventricle</rdf:ID>
         <rdfs:comment>The lateral ventricle is a C-shaped ventricle located inside the left part of cerebral hemisphere. It consists of frontal, occipital and temporal horns and a central part or body. It is connected with the third ventricle via the interventricular foramen of Monro.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma78450</rdfs:seeAlso>
@@ -604,10 +605,10 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Lingual -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Lingual -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Lingual">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Occipital_Lobe"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Lingual">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Occipital_Lobe"/>
         <rdf:ID>ctx-lh-lingual</rdf:ID>
         <rdfs:comment>The lingual gyrus lies between the calcarine sulcus and the posterior part of the collateral sulcus. It plays a vital role in processing vision, especially related to letters.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72682</rdfs:seeAlso>
@@ -616,10 +617,10 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Medial_Orbitofrontal -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Medial_Orbitofrontal -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Medial_Orbitofrontal">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Frontal_Lobe"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Medial_Orbitofrontal">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Frontal_Lobe"/>
         <rdf:ID>ctx-lh-medialorbitofrontal</rdf:ID>
         <rdfs:comment>Positioned medially on the frontal lobe, it process emotions, evaluates rewards and guides social behaviors.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72759</rdfs:seeAlso>
@@ -628,10 +629,10 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Middle_Temporal -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Middle_Temporal -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Middle_Temporal">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Temporal_Lobe"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Middle_Temporal">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Temporal_Lobe"/>
         <rdf:ID>ctx-lh-middletemporal</rdf:ID>
         <rdfs:comment>The medial temporal lobe is a region within the cerebral cortex comprised of a system of anatomically related structures, including the hippocampal region and the adjacent entorhinal, perirhinal, and parahippocampal cortices.The middle temporal lobe is a region of the brain situated in the temporal lobe, and it plays a significant role in processing auditory and visual information.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72686</rdfs:seeAlso>
@@ -640,10 +641,10 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Nucleus_Accumbens -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Nucleus_Accumbens -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Nucleus_Accumbens">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Basal_Ganglia"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Nucleus_Accumbens">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Basal_Ganglia"/>
         <rdf:ID>Left-Accumbens-area</rdf:ID>
         <rdfs:comment>The nucleus accumbens is a region in the basal forebrain rostral to the preoptic area of the hypothalamus. This brain region has been implicated in addictive behavior.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72837</rdfs:seeAlso>
@@ -652,10 +653,10 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Occipital_Lobe -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Occipital_Lobe -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Occipital_Lobe">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Cerebrum"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Occipital_Lobe">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Cerebrum"/>
         <rdfs:comment>Occipital lobe is the one of five lobes of the cerebral hemisphere which occupies the posterior-most portion of the hemisphere. Anteriorly, it shares an arbitrary border with the parietal lobe and temporal lobe. Medially, it is bounded by the longitudinal cerebral fissure.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72976</rdfs:seeAlso>
         <rdfs:seeAlso>http://radlex.org/RID/RID13869</rdfs:seeAlso>
@@ -663,20 +664,20 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Pallidum -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Pallidum -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Pallidum">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Basal_Ganglia"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Pallidum">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Basal_Ganglia"/>
         <rdf:ID>Left-Pallidum</rdf:ID>
         <rdfs:comment>The globus pallidus is an inner, pale-yellow region within the lenticular nucleus and serves as a central component in the telencephalon, fulfilling a functional role within the basal ganglia.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Paracentral -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Paracentral -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Paracentral">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Frontal_Lobe"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Paracentral">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Frontal_Lobe"/>
         <rdf:ID>ctx-lh-paracentral</rdf:ID>
         <rdfs:comment>The paracentral lobule is found on the medial aspect of the cerebral hemisphere, surrounding the paracentral sulcus, and consists of frontal and parietal parts</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma81257</rdfs:seeAlso>
@@ -685,10 +686,10 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Parahippocampal -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Parahippocampal -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Parahippocampal">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Temporal_Lobe"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Parahippocampal">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Temporal_Lobe"/>
         <rdf:ID>ctx-lh-parahippocampal</rdf:ID>
         <rdfs:comment>The parahippocampal gyrus is a grey matter cortical region of the brain that surrounds the hippocampus and is part of the limbic system. The region plays an important role in memory encoding and retrieval.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72706</rdfs:seeAlso>
@@ -697,10 +698,10 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Parietal_Lobe -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Parietal_Lobe -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Parietal_Lobe">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Cerebrum"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Parietal_Lobe">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Cerebrum"/>
         <rdfs:comment>Parietal lobe is the one of five lobes of the cerebral hemisphere which occupies the dorsal-posterior portion of the hemisphere. It is bounded by the central sulcus on its anterior border and and by the longitudinal cerebral fissure on its medial border. Posteriorly it shares an arbitrary border with the occipital lobe.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72974</rdfs:seeAlso>
         <rdfs:seeAlso>http://radlex.org/RID/RID13867</rdfs:seeAlso>
@@ -708,50 +709,50 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Pars_Opercularis -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Pars_Opercularis -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Pars_Opercularis">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Frontal_Lobe"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Pars_Opercularis">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Frontal_Lobe"/>
         <rdf:ID>ctx-lh-parsopercularis</rdf:ID>
         <rdfs:comment>The pars opercularis refers to the vertically oriented fold of the inferior frontal gyrus in the frontal lobe of the brain. It is located at rear of the three cortical segments that form the inferior frontal gyrus. It plays a significant role in the production of speech.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Pars_Orbitalis -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Pars_Orbitalis -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Pars_Orbitalis">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Frontal_Lobe"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Pars_Orbitalis">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Frontal_Lobe"/>
         <rdf:ID>ctx-lh-parsorbitalis</rdf:ID>
         <rdfs:comment>The pars orbitalis refers to the most rostral portion of the inferior frontal gyrus in the frontal lobe of the brain. It plays a role in the language processing network of the brain.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Pars_Triangularis -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Pars_Triangularis -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Pars_Triangularis">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Frontal_Lobe"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Pars_Triangularis">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Frontal_Lobe"/>
         <rdf:ID>ctx-lh-parstriangularis</rdf:ID>
         <rdfs:comment>The pars triangularis refers to the triangular shaped cortical region of the inferior frontal gyrus in the frontal lobe of the brain. It sits in between pars orbitalis and pars opercularis. It is well known in its involvement in speech production.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Pericalcarine -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Pericalcarine -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Pericalcarine">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Occipital_Lobe"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Pericalcarine">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Occipital_Lobe"/>
         <rdf:ID>ctx-lh-pericalcarine</rdf:ID>
         <rdfs:comment>The pericalcarine of occipiatal lobe is positioned around calcarine fissure, it contains the primary visual cortex and serves as a primary visual processing area responsible for analyzing basic visual features.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Postcentral -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Postcentral -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Postcentral">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Parietal_Lobe"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Postcentral">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Parietal_Lobe"/>
         <rdf:ID>ctx-lh-postcentral</rdf:ID>
         <rdfs:comment>The postcentral gyrus is on the lateral surface of the cerebral hemisphere, parallel to the central sulcus, separating the postcentral gyrus from the superior and inferior parietal lobules.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72666</rdfs:seeAlso>
@@ -760,10 +761,10 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Posterior -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Posterior -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Posterior">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Cingulate_Gyrus"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Posterior">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Cingulate_Gyrus"/>
         <rdf:ID>ctx-lh-posteriorcingulate</rdf:ID>
         <rdfs:comment>The posterior cingulate gyrus is located behind the thalamus and below the splenium, it regulates attention, processes emotions, and stores memories, influencing higher-order cognitive functions.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72747</rdfs:seeAlso>
@@ -772,10 +773,10 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Precentral -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Precentral -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Precentral">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Frontal_Lobe"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Precentral">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Frontal_Lobe"/>
         <rdf:ID>ctx-lh-precentral</rdf:ID>
         <rdfs:comment>Located on the lateral surface of each frontal lobe, anterior to the central sulcus. It contains the primary motor cortex which is responsible for the control of voluntary motor movement.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72662</rdfs:seeAlso>
@@ -784,10 +785,10 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Precuneus -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Precuneus -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Precuneus">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Parietal_Lobe"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Precuneus">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Parietal_Lobe"/>
         <rdf:ID>ctx-lh-precuneus</rdf:ID>
         <rdfs:comment>The precuneus is found rostral to the parietooccipital sulcus and dorsal to the subparietal sulcus on the medial aspect of the parietal lobe.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72674</rdfs:seeAlso>
@@ -796,10 +797,10 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Putamen -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Putamen -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Putamen">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Basal_Ganglia"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Putamen">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Basal_Ganglia"/>
         <rdf:ID>Left-Putamen</rdf:ID>
         <rdfs:comment>Nucleus of brain which lies ventral to the caudate nucleus and internal capsule and medial to the external capsule.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72829</rdfs:seeAlso>
@@ -808,30 +809,30 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Rostral_Anterior -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Rostral_Anterior -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Rostral_Anterior">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Cingulate_Gyrus"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Rostral_Anterior">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Cingulate_Gyrus"/>
         <rdf:ID>ctx-lh-rostralanteriorcingulate</rdf:ID>
         <rdfs:comment>Located at the front part of the cingulate gyrus, the rostral anterior region is associated with various cognitive functions and emotional processing.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Rostral_Middle_Frontal -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Rostral_Middle_Frontal -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Rostral_Middle_Frontal">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Frontal_Lobe"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Rostral_Middle_Frontal">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Frontal_Lobe"/>
         <rdf:ID>ctx-lh-rostralmiddlefrontal</rdf:ID>
         <rdfs:comment>Located at the front and middle portion of the frontal lobe, the rostral middle frontal gyrus contributes to decision-making and executive control in cognitive functions.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Superior_Frontal -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Superior_Frontal -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Superior_Frontal">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Frontal_Lobe"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Superior_Frontal">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Frontal_Lobe"/>
         <rdf:ID>ctx-lh-superiorfrontal</rdf:ID>
         <rdfs:comment>The superior frontal gyrus is the most dorsal gyrus of the frontal lobe on the lateral surface of the cerebral hemisphere.Tthe superior frontal gyrus plays a key role in advanced cognitive processes such as motor planning, working memory, and attention.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72654</rdfs:seeAlso>
@@ -840,10 +841,10 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Superior_Parietal -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Superior_Parietal -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Superior_Parietal">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Parietal_Lobe"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Superior_Parietal">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Parietal_Lobe"/>
         <rdf:ID>ctx-lh-superiorparietal</rdf:ID>
         <rdfs:comment>The superior parietal lobule is a large parietal lobule above the intraparietal sulcus on the lateral surface of the cerebral cortex.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72672</rdfs:seeAlso>
@@ -852,10 +853,10 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Superior_Temporal -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Superior_Temporal -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Superior_Temporal">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Temporal_Lobe"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Superior_Temporal">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Temporal_Lobe"/>
         <rdf:ID>ctx-lh-superiortemporal</rdf:ID>
         <rdfs:comment>Superior temoral lobe is a gyrus in the temporal lobe that contains parts of the auditory cortex. It includes Wernicke&apos;s area, which is the major area involved in the comprehension of language.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72684</rdfs:seeAlso>
@@ -864,10 +865,10 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Supramarginal -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Supramarginal -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Supramarginal">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Parietal_Lobe"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Supramarginal">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Parietal_Lobe"/>
         <rdf:ID>ctx-lh-supramarginal</rdf:ID>
         <rdfs:comment>The supramarginal gyrus is a part of the inferior parietal lobule, which caps the posterior tip of the lateral sulcus.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72668</rdfs:seeAlso>
@@ -876,10 +877,10 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Temporal_Lobe -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Temporal_Lobe -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Temporal_Lobe">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Cerebrum"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Temporal_Lobe">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Cerebrum"/>
         <rdfs:comment>Temporal lobe is the ventrolateral lobe of five lobes comprising each cerebral hemisphere. It is bounded dorsally by the lateral fissure and posteriorly by an arbitrary border shared with the occipital lobe.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72972</rdfs:seeAlso>
         <rdfs:seeAlso>http://radlex.org/RID/RID13865</rdfs:seeAlso>
@@ -887,21 +888,21 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Thalamus -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Thalamus -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Thalamus">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Diencephalon"/>
-        <owl:disjointWith rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Ventral_Diencephalon"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Thalamus">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Diencephalon"/>
+        <owl:disjointWith rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Ventral_Diencephalon"/>
         <rdf:ID>Left-Thalamus-Proper</rdf:ID>
         <rdfs:comment>Situated in brain&apos;s central region, thalamus is largely composed of nuclei, which relay sensory, motor and limbic information to the cerebral cortex and subpallial structures.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Transverse_Temporal -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Transverse_Temporal -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Transverse_Temporal">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Temporal_Lobe"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Transverse_Temporal">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Temporal_Lobe"/>
         <rdf:ID>ctx-lh-transversetemporal</rdf:ID>
         <rdfs:comment>Commonly referred to as Heschl&apos;s gyri; Transverse temporal gyri constitute a set of gyri situated deep within the lateral sulcus in the temporal lobe. These gyri typically house the primary auditory cortex.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma273675</rdfs:seeAlso>
@@ -910,50 +911,50 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Ventral_Diencephalon -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Ventral_Diencephalon -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Ventral_Diencephalon">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Diencephalon"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Ventral_Diencephalon">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Diencephalon"/>
         <rdf:ID>Left-VentralDC</rdf:ID>
         <rdfs:comment>The ventral diencephalon refers to the lower part of the diencephalon. It encompasses structures such as the hypothalamus and the lower section of the thalamus.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Mid_Anterior -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Mid_Anterior -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Mid_Anterior">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Corpus_Callosum"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Mid_Anterior">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Corpus_Callosum"/>
         <rdf:ID>CC_Mid_Anterior</rdf:ID>
         <rdfs:comment>The intermediate front segment of the corpus callosum, facilitating communication between specific regions in the anterior frontal lobes, crucial for executive functions and emotional processing.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Mid_Posterior -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Mid_Posterior -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Mid_Posterior">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Corpus_Callosum"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Mid_Posterior">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Corpus_Callosum"/>
         <rdf:ID>CC_Mid_Posterior</rdf:ID>
         <rdfs:comment>The middle rear part of the corpus callosum, connecting parietal and posterior temporal regions, contributing to spatial awareness, language processing, and integration of sensory information.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Posterior -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Posterior -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Posterior">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Corpus_Callosum"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Posterior">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Corpus_Callosum"/>
         <rdf:ID>CC_Posterior</rdf:ID>
         <rdfs:comment>The back portion of the corpus callosum, linking corresponding areas of the parietal, temporal, and occipital lobes, essential for visual processing, spatial orientation, and cross-modal integration.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Amygdala -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Amygdala -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Amygdala">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Temporal_Lobe"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Amygdala">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Temporal_Lobe"/>
         <rdf:ID>Right-Amygdala</rdf:ID>
         <rdfs:comment>Basal ganglion of telencephalon which is an almond-shaped gray mass in the dorsomedial part of the temporal lobe.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72832</rdfs:seeAlso>
@@ -962,40 +963,40 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Basal_Ganglia -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Basal_Ganglia -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Basal_Ganglia">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Cerebrum"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Basal_Ganglia">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Cerebrum"/>
         <rdfs:comment>The basal nuclei or basal ganglia are strictly speaking a group of closely related subpallial cell masses associated to the basal forebrain (the striatum and the pallidum) and to motor control.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma260706</rdfs:seeAlso>
     </owl:Class>
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Caudal_Anterior -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Caudal_Anterior -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Caudal_Anterior">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Cingulate_Gyrus"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Caudal_Anterior">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Cingulate_Gyrus"/>
         <rdf:ID>ctx-rh-caudalanteriorcingulate</rdf:ID>
         <rdfs:comment>The caudal anterior part of the cingulate gyrus is situated at both its posterior and anterior ends, contributing to emotional and cognitive regulation.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Caudal_Middle_Frontal -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Caudal_Middle_Frontal -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Caudal_Middle_Frontal">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Frontal_Lobe"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Caudal_Middle_Frontal">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Frontal_Lobe"/>
         <rdf:ID>ctx-rh-caudalmiddlefrontal</rdf:ID>
         <rdfs:comment>Refers to the posterior part of the middle frontal gyrus in the frontal lobe of the cerebrum. It plays a role in various cognitive functions, including motor planning and executive functions.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Caudate_Nucleus -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Caudate_Nucleus -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Caudate_Nucleus">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Basal_Ganglia"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Caudate_Nucleus">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Basal_Ganglia"/>
         <rdf:ID>Right-Caudate</rdf:ID>
         <rdfs:comment>Nucleus of brain which is an elongated crescent-shaped mass lying parallel and adjacent to the lateral ventricle throughout its extent.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72826</rdfs:seeAlso>
@@ -1004,20 +1005,20 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Cerebellum -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Cerebellum -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Cerebellum">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Cerebellum"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Cerebellum">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Cerebellum"/>
         <rdfs:comment>Right segment of neuraxis that has as its parts the cerebellar cortex, cerebellar nuclear complex and cerebellar white matter. Examples: There is only one cerebellum.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Cerebellum_Cortex -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Cerebellum_Cortex -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Cerebellum_Cortex">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Cerebellum"/>
-        <owl:disjointWith rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Cerebellum_White_Matter"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Cerebellum_Cortex">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Cerebellum"/>
+        <owl:disjointWith rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Cerebellum_White_Matter"/>
         <rdf:ID>Right-Cerebellum-Cortex</rdf:ID>
         <rdfs:comment>The cerebellar cortex is composed of a large number of cerebellar folia, forming the various lobules, and consists of three layers, from the outside inwards: (1) the molecular; (2) the Purkinje cell layer; and (3) the granular layer, which borders on the central white matter of the cerebellum.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma277130</rdfs:seeAlso>
@@ -1026,10 +1027,10 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Cerebellum_White_Matter -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Cerebellum_White_Matter -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Cerebellum_White_Matter">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Cerebellum"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Cerebellum_White_Matter">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Cerebellum"/>
         <rdf:ID>Right-Cerebellum-White-Matter</rdf:ID>
         <rdfs:comment>The white matter located in the right hemisphere of the cerebellum, facilitating communication between various cerebellar regions and connecting with other brain areas to coordinate motor functions and balance.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma274035</rdfs:seeAlso>
@@ -1038,10 +1039,10 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Cerebral_White_Matter -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Cerebral_White_Matter -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Cerebral_White_Matter">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#White_Matter"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Cerebral_White_Matter">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#White_Matter"/>
         <rdf:ID>Right-Cerebral-White-Matter</rdf:ID>
         <rdfs:comment>The collection of myelinated nerve fibers situated within the right cerebral hemisphere, responsible for transmitting signals between various regions of the right hemisphere and facilitating connectivity with left hemisphere.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma260791</rdfs:seeAlso>
@@ -1050,19 +1051,19 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Cerebrum -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Cerebrum -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Cerebrum">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Cerebrum"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Cerebrum">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Cerebrum"/>
         <rdfs:comment>Right subdivision of the brain derived from the secondary prosencephalon and consisting of the pallium and the subpallium; mostly used in adjectives such as cerebral hemisphere.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Choroid_Plexus -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Choroid_Plexus -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Choroid_Plexus">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Cerebrospinal_Fluid"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Choroid_Plexus">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Cerebrospinal_Fluid"/>
         <rdf:ID>Right-choroid-plexus</rdf:ID>
         <rdfs:comment>The secretory epithelium and associated blood vessels of the lateral, third and fourth ventricles, which produce cerebrospinal fluid.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma242857</rdfs:seeAlso>
@@ -1071,10 +1072,10 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Cingulate_Gyrus -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Cingulate_Gyrus -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Cingulate_Gyrus">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Cerebrum"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Cingulate_Gyrus">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Cerebrum"/>
         <rdfs:comment>The cingulate gyrus is a broad belt of cerebral cortex partially encircling the corpus callosum and comprising the cingulate cortex.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72717</rdfs:seeAlso>
         <rdfs:seeAlso>http://radlex.org/RID/RID26562</rdfs:seeAlso>
@@ -1082,10 +1083,10 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Cuneus -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Cuneus -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Cuneus">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Occipital_Lobe"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Cuneus">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Occipital_Lobe"/>
         <rdf:ID>ctx-rh-cuneus</rdf:ID>
         <rdfs:comment>The cuneus is a wedge shaped segment of the occipital lobe on the medial surface of the cerebral hemisphere between the calcarine and parieto-occipital fissures.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72679</rdfs:seeAlso>
@@ -1094,19 +1095,19 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Diencephalon -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Diencephalon -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Diencephalon">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Cerebrum"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Diencephalon">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Cerebrum"/>
         <rdfs:seeAlso>Organ component of neuraxis that has as its parts the epithalamus, thalamus, hypothalamus, subthalamus. There is only one diencephalon.</rdfs:seeAlso>
     </owl:Class>
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Entorhinal -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Entorhinal -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Entorhinal">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Temporal_Lobe"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Entorhinal">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Temporal_Lobe"/>
         <rdf:ID>ctx-rh-entorhinal</rdf:ID>
         <rdfs:comment>The entorhinal cortex is located in the medial temporal lobe, whose functions include being a widespread network hub for memory, navigation, and the perception of time.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72740</rdfs:seeAlso>
@@ -1115,10 +1116,10 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Frontal_Lobe -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Frontal_Lobe -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Frontal_Lobe">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Cerebrum"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Frontal_Lobe">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Cerebrum"/>
         <rdfs:comment>Frontal lobe is the anterior-most of five lobes of the cerebral hemisphere. It is bounded by the central sulcus on its posterior border and by the longitudinal cerebral fissure on its medial border.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72969</rdfs:seeAlso>
         <rdfs:seeAlso>http://radlex.org/RID/RID13862</rdfs:seeAlso>
@@ -1126,10 +1127,10 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Fusiform -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Fusiform -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Fusiform">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Temporal_Lobe"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Fusiform">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Temporal_Lobe"/>
         <rdf:ID>ctx-rh-fusiform</rdf:ID>
         <rdfs:comment>The fusiform gyrus, also known as the lateral occipitotemporal gyrus, is a structure that lies on the basal surface of the temporal and occipital lobes.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72689</rdfs:seeAlso>
@@ -1138,10 +1139,10 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Hippocampus -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Hippocampus -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Hippocampus">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Temporal_Lobe"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Hippocampus">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Temporal_Lobe"/>
         <rdf:ID>Right-Hippocampus</rdf:ID>
         <rdfs:comment>Gyrus of limbic lobe, each instance of which is convoluted mass of gray matter extending the entire length of the floor of the temporal horn of some lateral ventricle; it is part of some limbic system and plays major roles in short term memory and spatial navigation.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma275022</rdfs:seeAlso>
@@ -1150,20 +1151,20 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Inf-Lat-Vent -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Inf-Lat-Vent -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Inf-Lat-Vent">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Cerebrospinal_Fluid"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Inf-Lat-Vent">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Cerebrospinal_Fluid"/>
         <rdf:ID>Right-Inf-Lat-Vent</rdf:ID>
         <rdfs:comment>The inferior lateral ventricle refers to the lower portion of the lateral ventricle within the brain. It is the largest component of the lateral ventricle. It begins at the posterior end of the central region, and runs anteroinferiorly into the temporal lobe.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Inferior_Parietal -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Inferior_Parietal -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Inferior_Parietal">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Parietal_Lobe"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Inferior_Parietal">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Parietal_Lobe"/>
         <rdf:ID>ctx-rh-inferiorparietal</rdf:ID>
         <rdfs:comment>The inferior parietal lobule is the lower part of the parietal lobe on the lateral surface of the cerebral hemisphere, below the intraparietal sulcus, and behind the post-central gyrus. It consists of the angular and supramarginal gyri.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma81254</rdfs:seeAlso>
@@ -1172,10 +1173,10 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Inferior_Temporal -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Inferior_Temporal -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Inferior_Temporal">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Temporal_Lobe"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Inferior_Temporal">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Temporal_Lobe"/>
         <rdf:ID>ctx-rh-inferiortemporal</rdf:ID>
         <rdfs:comment>The inferior temporal gyrus is one of three gyri of the temporal lobe and is located below the middle temporal gyrus, connected behind with the inferior occipital gyrus.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72687</rdfs:seeAlso>
@@ -1184,10 +1185,10 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Insula -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Insula -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Insula">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Cerebrum"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Insula">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Cerebrum"/>
         <rdf:ID>ctx-rh-insula</rdf:ID>
         <rdfs:comment>Lobe of cerebral hemispheere located in the depths of the lateral fissure and is covered by portions of the frontal, parietal and temporal lobes.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72977</rdfs:seeAlso>
@@ -1196,10 +1197,10 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Isthmus -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Isthmus -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Isthmus">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Cingulate_Gyrus"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Isthmus">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Cingulate_Gyrus"/>
         <rdf:ID>ctx-rh-isthmuscingulate</rdf:ID>
         <rdfs:comment>The isthmus of the cingulate gyrus is a narrow section that extends from the cingulate gyrus into the temporal lobe. It is situated between the splenium of the corpus callosum and the lingual gyrus, forming a connection between these brain regions.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72748</rdfs:seeAlso>
@@ -1208,10 +1209,10 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Lateral_Occipital -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Lateral_Occipital -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Lateral_Occipital">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Occipital_Lobe"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Lateral_Occipital">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Occipital_Lobe"/>
         <rdf:ID>ctx-rh-lateraloccipital</rdf:ID>
         <rdfs:comment>The lateral occipital sulcus is a horizontal sulcus that divides the lateral occipital surface into gyri. It is crucial for processing visual information related to object recognition and spatial perception.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72677</rdfs:seeAlso>
@@ -1220,10 +1221,10 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Lateral_Orbitofrontal -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Lateral_Orbitofrontal -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Lateral_Orbitofrontal">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Frontal_Lobe"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Lateral_Orbitofrontal">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Frontal_Lobe"/>
         <rdf:ID>ctx-rh-lateralorbitofrontal</rdf:ID>
         <rdfs:comment>Found on the lateral frontal surface of orbitofornatal cortex, it regulates emotions related punishments and non-rewards.</rdfs:comment>
         <rdfs:seeAlso>http://radlex.org/RID/RID13923</rdfs:seeAlso>
@@ -1232,10 +1233,10 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Lateral_Ventricle -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Lateral_Ventricle -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Lateral_Ventricle">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Cerebrospinal_Fluid"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Lateral_Ventricle">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Cerebrospinal_Fluid"/>
         <rdf:ID>Right-Lateral-Ventricle</rdf:ID>
         <rdfs:comment>The lateral ventricle is a C-shaped ventricle located inside the right part of cerebral hemisphere. It consists of frontal, occipital and temporal horns and a central part or body. It is connected with the third ventricle via the interventricular foramen of Monro.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma78449</rdfs:seeAlso>
@@ -1244,10 +1245,10 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Lingual -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Lingual -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Lingual">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Occipital_Lobe"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Lingual">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Occipital_Lobe"/>
         <rdf:ID>ctx-rh-lingual</rdf:ID>
         <rdfs:comment>The lingual gyrus lies between the calcarine sulcus and the posterior part of the collateral sulcus. It plays a vital role in processing vision, especially related to letters.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72681</rdfs:seeAlso>
@@ -1256,10 +1257,10 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Medial_Orbitofrontal -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Medial_Orbitofrontal -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Medial_Orbitofrontal">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Frontal_Lobe"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Medial_Orbitofrontal">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Frontal_Lobe"/>
         <rdf:ID>ctx-rh-medialorbitofrontal</rdf:ID>
         <rdfs:comment>Positioned medially on the frontal lobe, it process emotions, evaluates rewards and guides social behaviors.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72758</rdfs:seeAlso>
@@ -1268,10 +1269,10 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Middle_Temporal -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Middle_Temporal -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Middle_Temporal">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Temporal_Lobe"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Middle_Temporal">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Temporal_Lobe"/>
         <rdf:ID>ctx-rh-middletemporal</rdf:ID>
         <rdfs:comment>The medial temporal lobe is a region within the cerebral cortex comprised of a system of anatomically related structures, including the hippocampal region and the adjacent entorhinal, perirhinal, and parahippocampal cortices.The middle temporal lobe is a region of the brain situated in the temporal lobe, and it plays a significant role in processing auditory and visual information.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72685</rdfs:seeAlso>
@@ -1280,10 +1281,10 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Nucleus_Accumbens -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Nucleus_Accumbens -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Nucleus_Accumbens">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Basal_Ganglia"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Nucleus_Accumbens">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Basal_Ganglia"/>
         <rdf:ID>Right-Accumbens-area</rdf:ID>
         <rdfs:comment>The nucleus accumbens is a region in the basal forebrain rostral to the preoptic area of the hypothalamus. This brain region has been implicated in addictive behavior.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72836</rdfs:seeAlso>
@@ -1292,10 +1293,10 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Occipital_Lobe -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Occipital_Lobe -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Occipital_Lobe">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Cerebrum"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Occipital_Lobe">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Cerebrum"/>
         <rdfs:comment>Occipital lobe is the one of five lobes of the cerebral hemisphere which occupies the posterior-most portion of the hemisphere. Anteriorly, it shares an arbitrary border with the parietal lobe and temporal lobe. Medially, it is bounded by the longitudinal cerebral fissure.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72975</rdfs:seeAlso>
         <rdfs:seeAlso>http://radlex.org/RID/RID13868</rdfs:seeAlso>
@@ -1303,20 +1304,20 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Pallidum -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Pallidum -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Pallidum">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Basal_Ganglia"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Pallidum">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Basal_Ganglia"/>
         <rdf:ID>Right-Pallidum</rdf:ID>
         <rdfs:comment>The globus pallidus is an inner, pale-yellow region within the lenticular nucleus and serves as a central component in the telencephalon, fulfilling a functional role within the basal ganglia.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Paracentral -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Paracentral -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Paracentral">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Frontal_Lobe"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Paracentral">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Frontal_Lobe"/>
         <rdf:ID>ctx-rh-paracentral</rdf:ID>
         <rdfs:comment>The paracentral lobule is found on the medial aspect of the cerebral hemisphere, surrounding the paracentral sulcus, and consists of frontal and parietal parts.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma81256</rdfs:seeAlso>
@@ -1325,10 +1326,10 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Parahippocampal -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Parahippocampal -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Parahippocampal">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Temporal_Lobe"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Parahippocampal">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Temporal_Lobe"/>
         <rdf:ID>ctx-rh-parahippocampal</rdf:ID>
         <rdfs:comment>The parahippocampal gyrus is a grey matter cortical region of the brain that surrounds the hippocampus and is part of the limbic system. The region plays an important role in memory encoding and retrieval.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72705</rdfs:seeAlso>
@@ -1337,10 +1338,10 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Parietal_Lobe -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Parietal_Lobe -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Parietal_Lobe">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Cerebrum"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Parietal_Lobe">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Cerebrum"/>
         <rdfs:comment>Parietal lobe is the one of five lobes of the cerebral hemisphere which occupies the dorsal-posterior portion of the hemisphere. It is bounded by the central sulcus on its anterior border and and by the longitudinal cerebral fissure on its medial border. Posteriorly it shares an arbitrary border with the occipital lobe.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72973</rdfs:seeAlso>
         <rdfs:seeAlso>http://radlex.org/RID/RID13866</rdfs:seeAlso>
@@ -1348,50 +1349,50 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Pars_Opercularis -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Pars_Opercularis -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Pars_Opercularis">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Frontal_Lobe"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Pars_Opercularis">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Frontal_Lobe"/>
         <rdf:ID>ctx-rh-parsopercularis</rdf:ID>
         <rdfs:comment>The pars opercularis refers to the vertically oriented fold of the inferior frontal gyrus in the frontal lobe of the brain. It is located at rear of the three cortical segments that form the inferior frontal gyrus. It plays a significant role in the production of speech.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Pars_Orbitalis -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Pars_Orbitalis -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Pars_Orbitalis">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Frontal_Lobe"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Pars_Orbitalis">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Frontal_Lobe"/>
         <rdf:ID>ctx-rh-parsorbitalis</rdf:ID>
         <rdfs:comment>The pars orbitalis refers to the most rostral portion of the inferior frontal gyrus in the frontal lobe of the brain. It plays a role in the language processing network of the brain.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Pars_Triangularis -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Pars_Triangularis -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Pars_Triangularis">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Frontal_Lobe"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Pars_Triangularis">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Frontal_Lobe"/>
         <rdf:ID>ctx-rh-parstriangularis</rdf:ID>
         <rdfs:comment>The pars triangularis refers to the triangular shaped cortical region of the inferior frontal gyrus in the frontal lobe of the brain. It sits in between pars orbitalis and pars opercularis. It is well known in its involvement in speech production.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Pericalcarine -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Pericalcarine -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Pericalcarine">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Occipital_Lobe"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Pericalcarine">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Occipital_Lobe"/>
         <rdf:ID>ctx-rh-pericalcarine</rdf:ID>
         <rdfs:comment>The pericalcarine of occipiatal lobe is positioned around calcarine fissure, it contains the primary visual cortex and serves as a primary visual processing area responsible for analyzing basic visual features.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Postcentral -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Postcentral -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Postcentral">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Parietal_Lobe"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Postcentral">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Parietal_Lobe"/>
         <rdf:ID>ctx-rh-postcentral</rdf:ID>
         <rdfs:comment>The postcentral gyrus is on the lateral surface of the cerebral hemisphere, parallel to the central sulcus, separating the postcentral gyrus from the superior and inferior parietal lobules.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72665</rdfs:seeAlso>
@@ -1400,10 +1401,10 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Posterior -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Posterior -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Posterior">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Cingulate_Gyrus"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Posterior">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Cingulate_Gyrus"/>
         <rdf:ID>ctx-rh-posteriorcingulate</rdf:ID>
         <rdfs:comment>The posterior cingulate gyrus is located behind the thalamus and below the splenium, it regulates attention, processes emotions, and stores memories, influencing higher-order cognitive functions.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72746</rdfs:seeAlso>
@@ -1412,10 +1413,10 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Precentral -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Precentral -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Precentral">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Frontal_Lobe"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Precentral">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Frontal_Lobe"/>
         <rdf:ID>ctx-rh-precentral</rdf:ID>
         <rdfs:comment>Located on the lateral surface of each frontal lobe, anterior to the central sulcus. It contains the primary motor cortex which is responsible for the control of voluntary motor movement.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72661</rdfs:seeAlso>
@@ -1424,10 +1425,10 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Precuneus -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Precuneus -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Precuneus">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Parietal_Lobe"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Precuneus">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Parietal_Lobe"/>
         <rdf:ID>ctx-rh-precuneus</rdf:ID>
         <rdfs:comment>The precuneus is found rostral to the parietooccipital sulcus and dorsal to the subparietal sulcus on the medial aspect of the parietal lobe.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72673</rdfs:seeAlso>
@@ -1436,10 +1437,10 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Putamen -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Putamen -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Putamen">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Basal_Ganglia"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Putamen">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Basal_Ganglia"/>
         <rdf:ID>Right-Putamen</rdf:ID>
         <rdfs:comment>Nucleus of brain which lies ventral to the caudate nucleus and internal capsule and medial to the external capsule.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72828</rdfs:seeAlso>
@@ -1448,30 +1449,30 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Rostral_Anterior -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Rostral_Anterior -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Rostral_Anterior">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Cingulate_Gyrus"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Rostral_Anterior">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Cingulate_Gyrus"/>
         <rdf:ID>ctx-rh-rostralanteriorcingulate</rdf:ID>
         <rdfs:comment>Located at the front part of the cingulate gyrus, the rostral anterior region is associated with various cognitive functions and emotional processing.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Rostral_Middle_Frontal -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Rostral_Middle_Frontal -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Rostral_Middle_Frontal">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Frontal_Lobe"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Rostral_Middle_Frontal">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Frontal_Lobe"/>
         <rdf:ID>ctx-rh-rostralmiddlefrontal</rdf:ID>
         <rdfs:comment>Located at the front and middle portion of the frontal lobe, the rostral middle frontal gyrus contributes to decision-making and executive control in cognitive functions.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Superior_Frontal -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Superior_Frontal -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Superior_Frontal">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Frontal_Lobe"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Superior_Frontal">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Frontal_Lobe"/>
         <rdf:ID>ctx-rh-superiorfrontal</rdf:ID>
         <rdfs:comment>The superior frontal gyrus is the most dorsal gyrus of the frontal lobe on the lateral surface of the cerebral hemisphere.Tthe superior frontal gyrus plays a key role in advanced cognitive processes such as motor planning, working memory, and attention.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72653</rdfs:seeAlso>
@@ -1480,10 +1481,10 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Superior_Parietal -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Superior_Parietal -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Superior_Parietal">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Parietal_Lobe"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Superior_Parietal">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Parietal_Lobe"/>
         <rdf:ID>ctx-rh-superiorparietal</rdf:ID>
         <rdfs:comment>The superior parietal lobule is a large parietal lobule above the intraparietal sulcus on the lateral surface of the cerebral cortex.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72671</rdfs:seeAlso>
@@ -1492,10 +1493,10 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Superior_Temporal -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Superior_Temporal -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Superior_Temporal">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Temporal_Lobe"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Superior_Temporal">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Temporal_Lobe"/>
         <rdf:ID>ctx-rh-superiortemporal</rdf:ID>
         <rdfs:comment>Superior temoral lobe is a gyrus in the temporal lobe that contains parts of the auditory cortex. It includes Wernicke&apos;s area, which is the major area involved in the comprehension of language.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72683</rdfs:seeAlso>
@@ -1504,10 +1505,10 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Supramarginal -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Supramarginal -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Supramarginal">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Parietal_Lobe"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Supramarginal">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Parietal_Lobe"/>
         <rdf:ID>ctx-rh-supramarginal</rdf:ID>
         <rdfs:comment>The supramarginal gyrus is a part of the inferior parietal lobule, which caps the posterior tip of the lateral sulcus.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72667</rdfs:seeAlso>
@@ -1516,10 +1517,10 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Temporal_Lobe -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Temporal_Lobe -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Temporal_Lobe">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Cerebrum"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Temporal_Lobe">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Cerebrum"/>
         <rdfs:comment>Temporal lobe is the ventrolateral lobe of five lobes comprising each cerebral hemisphere. It is bounded dorsally by the lateral fissure and posteriorly by an arbitrary border shared with the occipital lobe.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72971</rdfs:seeAlso>
         <rdfs:seeAlso>http://radlex.org/RID/RID13864</rdfs:seeAlso>
@@ -1527,21 +1528,21 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Thalamus -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Thalamus -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Thalamus">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Diencephalon"/>
-        <owl:disjointWith rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Ventral_Diencephalon"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Thalamus">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Diencephalon"/>
+        <owl:disjointWith rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Ventral_Diencephalon"/>
         <rdf:ID>Right-Thalamus-Proper</rdf:ID>
         <rdfs:comment>Situated in brain&apos;s central region, thalamus is largely composed of nuclei, which relay sensory, motor and limbic information to the cerebral cortex and subpallial structures.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Transverse_Temporal -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Transverse_Temporal -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Transverse_Temporal">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Temporal_Lobe"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Transverse_Temporal">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Temporal_Lobe"/>
         <rdf:ID>ctx-rh-transversetemporal</rdf:ID>
         <rdfs:comment>Commonly referred to as Heschl&apos;s gyri; Transverse temporal gyri constitute a set of gyri situated deep within the lateral sulcus in the temporal lobe. These gyri typically house the primary auditory cortex.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma273673</rdfs:seeAlso>
@@ -1550,36 +1551,36 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Ventral_Diencephalon -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Ventral_Diencephalon -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Ventral_Diencephalon">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Diencephalon"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Ventral_Diencephalon">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Diencephalon"/>
         <rdf:ID>Right-VentralDC</rdf:ID>
         <rdfs:comment>The ventral diencephalon refers to the lower part of the diencephalon. It encompasses structures such as the hypothalamus and the lower section of the thalamus.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Subject -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Subject -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Subject"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Subject"/>
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#WM_Hypointensities -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#WM_Hypointensities -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#WM_Hypointensities">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#White_Matter"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#WM_Hypointensities">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#White_Matter"/>
         <rdf:ID>WM-hypointensities</rdf:ID>
         <rdfs:comment>Abnormal areas within the white matter of the brain that appear darker than surrounding tissues on magnetic resonance imaging (MRI).</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#White_Matter -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#White_Matter -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#White_Matter">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Cerebrum"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#White_Matter">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Cerebrum"/>
         <rdfs:comment>The white matter is an overall term for the fiber tracts in the central nervous system.It can be subdivided into central roots, ascending, intrinsic and descending tracts.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma241998</rdfs:seeAlso>
         <rdfs:seeAlso>http://radlex.org/RID/RID16996</rdfs:seeAlso>
@@ -1587,10 +1588,10 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#3rd-Ventricle -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#3rd-Ventricle -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#3rd-Ventricle">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Cerebrospinal_Fluid"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#3rd-Ventricle">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Cerebrospinal_Fluid"/>
         <rdf:ID>3rd-Ventricle</rdf:ID>
         <rdfs:comment>The third ventricle is a narrow part of the ventricular system between the thalami and hypothalami on both sides.</rdfs:comment>
         <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma273606</rdfs:seeAlso>
@@ -1599,10 +1600,10 @@
     
 
 
-    <!-- https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#4th-Ventricle -->
+    <!-- https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#4th-Ventricle -->
 
-    <owl:Class rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#4th-Ventricle">
-        <rdfs:subClassOf rdf:resource="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Cerebrospinal_Fluid"/>
+    <owl:Class rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#4th-Ventricle">
+        <rdfs:subClassOf rdf:resource="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Cerebrospinal_Fluid"/>
         <rdf:ID>4th-Ventricle</rdf:ID>
         <rdfs:comment>The fourth ventricle is the most caudal of the brain ventricles, shaped like a tent with a peaked roof protruding as the fastigium into the cerebellum and a diamond-shaped 
 floor, the rhomboid fossa formed by the ventricular surfaces of the pons and medulla 
@@ -1624,197 +1625,197 @@ oblongata.</rdfs:comment>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Anterior"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Central"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Mid_Anterior"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Mid_Posterior"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Posterior"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Anterior"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Central"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Mid_Anterior"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Mid_Posterior"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Posterior"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Brainstem"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Cerebellum"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Cerebrospinal_Fluid"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Cerebrum"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Brainstem"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Cerebellum"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Cerebrospinal_Fluid"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Cerebrum"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#CSF"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Choroid_Plexus"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Inf-Lat-Vent"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Lateral_Ventricle"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Choroid_Plexus"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Inf-Lat-Vent"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Lateral_Ventricle"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#3rd-Ventricle"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#4th-Ventricle"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#CSF"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Choroid_Plexus"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Inf-Lat-Vent"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Lateral_Ventricle"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Choroid_Plexus"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Inf-Lat-Vent"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Lateral_Ventricle"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#3rd-Ventricle"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#4th-Ventricle"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Corpus_Callosum"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Cerebral_White_Matter"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Cerebral_White_Matter"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#WM_Hypointensities"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Corpus_Callosum"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Cerebral_White_Matter"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Cerebral_White_Matter"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#WM_Hypointensities"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Basal_Ganglia"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Cingulate_Gyrus"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Diencephalon"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Frontal_Lobe"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Insula"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Occipital_Lobe"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Parietal_Lobe"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Temporal_Lobe"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Basal_Ganglia"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Cingulate_Gyrus"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Diencephalon"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Frontal_Lobe"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Insula"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Occipital_Lobe"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Parietal_Lobe"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Temporal_Lobe"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Caudal_Anterior"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Isthmus"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Posterior"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Rostral_Anterior"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Caudal_Anterior"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Isthmus"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Posterior"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Rostral_Anterior"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Caudal_Middle_Frontal"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Lateral_Orbitofrontal"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Medial_Orbitofrontal"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Paracentral"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Pars_Opercularis"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Pars_Orbitalis"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Pars_Triangularis"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Precentral"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Rostral_Middle_Frontal"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Superior_Frontal"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Caudal_Middle_Frontal"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Lateral_Orbitofrontal"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Medial_Orbitofrontal"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Paracentral"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Pars_Opercularis"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Pars_Orbitalis"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Pars_Triangularis"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Precentral"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Rostral_Middle_Frontal"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Superior_Frontal"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Caudate_Nucleus"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Nucleus_Accumbens"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Pallidum"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Putamen"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Caudate_Nucleus"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Nucleus_Accumbens"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Pallidum"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Putamen"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Cuneus"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Lateral_Occipital"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Lingual"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Pericalcarine"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Cuneus"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Lateral_Occipital"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Lingual"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Pericalcarine"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Entorhinal"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Fusiform"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Inferior_Temporal"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Middle_Temporal"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Parahippocampal"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Superior_Temporal"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Transverse_Temporal"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Entorhinal"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Fusiform"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Inferior_Temporal"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Middle_Temporal"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Parahippocampal"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Superior_Temporal"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Transverse_Temporal"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Inferior_Parietal"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Postcentral"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Precuneus"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Superior_Parietal"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Left_Supramarginal"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Inferior_Parietal"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Postcentral"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Precuneus"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Superior_Parietal"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Left_Supramarginal"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Basal_Ganglia"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Cingulate_Gyrus"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Diencephalon"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Frontal_Lobe"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Insula"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Occipital_Lobe"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Parietal_Lobe"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Temporal_Lobe"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Basal_Ganglia"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Cingulate_Gyrus"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Diencephalon"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Frontal_Lobe"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Insula"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Occipital_Lobe"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Parietal_Lobe"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Temporal_Lobe"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Caudal_Anterior"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Isthmus"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Posterior"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Rostral_Anterior"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Caudal_Anterior"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Isthmus"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Posterior"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Rostral_Anterior"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Caudal_Middle_Frontal"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Lateral_Orbitofrontal"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Medial_Orbitofrontal"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Paracentral"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Pars_Opercularis"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Pars_Orbitalis"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Pars_Triangularis"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Precentral"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Rostral_Middle_Frontal"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Superior_Frontal"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Caudal_Middle_Frontal"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Lateral_Orbitofrontal"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Medial_Orbitofrontal"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Paracentral"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Pars_Opercularis"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Pars_Orbitalis"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Pars_Triangularis"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Precentral"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Rostral_Middle_Frontal"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Superior_Frontal"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Caudate_Nucleus"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Nucleus_Accumbens"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Pallidum"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Putamen"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Caudate_Nucleus"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Nucleus_Accumbens"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Pallidum"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Putamen"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Cuneus"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Lateral_Occipital"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Lingual"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Pericalcarine"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Cuneus"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Lateral_Occipital"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Lingual"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Pericalcarine"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Entorhinal"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Fusiform"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Inferior_Temporal"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Middle_Temporal"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Parahippocampal"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Superior_Temporal"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Transverse_Temporal"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Entorhinal"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Fusiform"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Inferior_Temporal"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Middle_Temporal"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Parahippocampal"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Superior_Temporal"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Transverse_Temporal"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Inferior_Parietal"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Postcentral"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Precuneus"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Superior_Parietal"/>
-            <rdf:Description rdf:about="https://www.explaination.net/tree-structure-brain-anatomy-FastSurfer#Right_Supramarginal"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Inferior_Parietal"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Postcentral"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Precuneus"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Superior_Parietal"/>
+            <rdf:Description rdf:about="https://explaination.net/onto/tree-structure-brain-anatomy-FastSurfer#Right_Supramarginal"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
