@@ -17,6 +17,10 @@ Extending current tools, we proposed a novel interpretation pipeline by **combin
 and visual summary reports** to enhance examination of a person's atrophy profile for the whole brain at once. 
 Our study also aimed to utilise resulting summary reports for highlighting both group characteristics of disease stages as well as single-subject data.
 
+Further details could be found in our proceedings paper:
+
+Singh & Dyrba (2024) Computational Ontology and Visualization Framework for the Visual Comparison of Brain Atrophy Profiles. Bildverarbeitung für die Medizin 2024. BVM 2024. DOI: [10.1007/978-3-658-44037-4_43](https://doi.org/10.1007/978-3-658-44037-4_43)
+
 ## Ontology
 Inspired by the Foundational Model of Anatomy (FMA), we developed a web ontology language (OWL)-based ontology, 
 which captures relationships among neuroanatomical regions, using the Protégé modeling software. The ontology includes all ROIs segmented by the FastSurferCNN software.
@@ -43,9 +47,12 @@ A sample summary plot for an ADNI participant with mild dementia due to Alzheime
 
 ## Citation
 ```bibtex
-@misc{Singh2024Onto,
-    author = {Singh, Devesh and Dyrba, Martin and others},
-    title = {A computational ontology and visualization framework for the visual comparison of brain atrophy profiles},
-    year = {2024},
+@inproceedings{singh2024computational,
+  title={Computational Ontology and Visualization Framework for the Visual Comparison of Brain Atrophy Profiles},
+  author={Singh, Devesh and Dyrba, Martin},
+  booktitle={BVM Workshop},
+  pages={149--154},
+  year={2024},
+  organization={Springer}
 }
 ```
