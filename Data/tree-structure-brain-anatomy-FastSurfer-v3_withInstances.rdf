@@ -122,7 +122,7 @@
 
 <owl:Class rdf:about="#Anterior">
   <rdfs:subClassOf rdf:resource="#Corpus_Callosum"/>
-  <rdf:ID>CC_Anterior</rdf:ID>
+  <ID>CC_Anterior</ID>
   <rdfs:comment>The front part of the corpus callosum, connecting prefrontal and anterior frontal regions between the left and right cerebral hemispheres, enabling coordination in decision making and complex tasks.</rdfs:comment>
   <LR_model_coef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[sex:0.32723564706704616, age:-3.3029480290272484, field_strength:28.42364954637293, eTIV:0.0003652992193584559, intercept: 567.1799204537242]</LR_model_coef>
 </owl:Class>
@@ -137,7 +137,7 @@
 
 <owl:Class rdf:about="#Brainstem">
   <rdfs:subClassOf rdf:resource="#Brain_Region"/>
-  <rdf:ID>Brain-Stem</rdf:ID>
+  <ID>Brain-Stem</ID>
   <rdfs:comment>The brainstem is the part of the brain that connects the cerebral hemispheres with the spinal cord.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma79876</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID6677</rdfs:seeAlso>
@@ -146,7 +146,7 @@
 
 <owl:Class rdf:about="#CSF">
   <rdfs:subClassOf rdf:resource="#Cerebrospinal_Fluid"/>
-  <rdf:ID>CSF</rdf:ID>
+  <ID>CSF</ID>
   <rdfs:comment>This region defines a portion of cerebrospinal fluid, which is the upper part of the third ventricle and is located between the lateral ventricles and the lower part of the third ventricle.</rdfs:comment>
   <LR_model_coef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[sex:-157.29117978882186, age:8.521934929759071, field_strength:51.69765918518559, eTIV:0.000559799247083037, intercept: -216.97402255228076]</LR_model_coef>
 </owl:Class>
@@ -161,7 +161,7 @@
 
 <owl:Class rdf:about="#Central">
   <rdfs:subClassOf rdf:resource="#Corpus_Callosum"/>
-  <rdf:ID>CC_Central</rdf:ID>
+  <ID>CC_Central</ID>
   <rdfs:comment>The middle section of the corpus callosum, linking motor and sensory areas in the central brain regions, supporting integrated control of voluntary movements and sensory processing.</rdfs:comment>
   <LR_model_coef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[sex:-21.41621838144645, age:-8.480342363194392, field_strength:20.242507416356972, eTIV:0.00011584257211359092, intercept: 1106.1953519750334]</LR_model_coef>
 </owl:Class>
@@ -192,7 +192,7 @@
 
 <owl:Class rdf:about="#Left_Amygdala">
   <rdfs:subClassOf rdf:resource="#Left_Temporal_Lobe"/>
-  <rdf:ID>Left-Amygdala</rdf:ID>
+  <ID>Left-Amygdala</ID>
   <rdfs:comment>Basal ganglion of telencephalon which is an almond-shaped gray mass in the dorsomedial part of the temporal lobe.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72833</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID15698</rdfs:seeAlso>
@@ -222,7 +222,7 @@
 
 <owl:Class rdf:about="#Left_Caudal_Anterior">
   <rdfs:subClassOf rdf:resource="#Left_Cingulate_Gyrus"/>
-  <rdf:ID>ctx-lh-caudalanteriorcingulate</rdf:ID>
+  <ID>ctx-lh-caudalanteriorcingulate</ID>
   <rdfs:comment>The caudal anterior part of the cingulate gyrus is situated at both its posterior and anterior ends, contributing to emotional and cognitive regulation.</rdfs:comment>
   <LR_model_coef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[sex:-83.60388111662006, age:-15.678952038266493, field_strength:98.74938612762054, eTIV:0.0012838993197694215, intercept: 1794.7648536298107]</LR_model_coef>
 </owl:Class>
@@ -237,7 +237,7 @@
 
 <owl:Class rdf:about="#Left_Caudal_Middle_Frontal">
   <rdfs:subClassOf rdf:resource="#Left_Frontal_Lobe"/>
-  <rdf:ID>ctx-lh-caudalmiddlefrontal</rdf:ID>
+  <ID>ctx-lh-caudalmiddlefrontal</ID>
   <rdfs:comment>Refers to the posterior part of the middle frontal gyrus in the frontal lobe of the cerebrum. It plays a role in various cognitive functions, including motor planning and executive functions.</rdfs:comment>
   <LR_model_coef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[sex:-120.0692510203522, age:-38.553358023358825, field_strength:211.92344293301008, eTIV:0.002526956052563551, intercept: 4532.512504813848]</LR_model_coef>
 </owl:Class>
@@ -252,7 +252,7 @@
 
 <owl:Class rdf:about="#Left_Caudate_Nucleus">
   <rdfs:subClassOf rdf:resource="#Left_Basal_Ganglia"/>
-  <rdf:ID>Left-Caudate</rdf:ID>
+  <ID>Left-Caudate</ID>
   <rdfs:comment>Nucleus of brain which is an elongated crescent-shaped mass lying parallel and adjacent to the lateral ventricle throughout its extent.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72827</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID21020</rdfs:seeAlso>
@@ -279,7 +279,7 @@
 <owl:Class rdf:about="#Left_Cerebellum_Cortex">
   <rdfs:subClassOf rdf:resource="#Left_Cerebellum"/>
   <owl:disjointWith rdf:resource="#Left_Cerebellum_White_Matter"/>
-  <rdf:ID>Left-Cerebellum-Cortex</rdf:ID>
+  <ID>Left-Cerebellum-Cortex</ID>
   <rdfs:comment>The cerebellar cortex is composed of a large number of cerebellar folia, forming the various lobules, and consists of three layers, from the outside inwards: (1) the molecular; (2) the Purkinje cell layer; and (3) the granular layer, which borders on the central white matter of the cerebellum.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma277132</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID15574</rdfs:seeAlso>
@@ -288,7 +288,7 @@
 
 <owl:Class rdf:about="#Left_Cerebellum_White_Matter">
   <rdfs:subClassOf rdf:resource="#Left_Cerebellum"/>
-  <rdf:ID>Left-Cerebellum-White-Matter</rdf:ID>
+  <ID>Left-Cerebellum-White-Matter</ID>
   <rdfs:comment>The white matter located in the left hemisphere of the cerebellum, facilitating communication between various cerebellar regions and connecting with other brain areas to coordinate motor functions and balance.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma274037</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID17313</rdfs:seeAlso>
@@ -297,7 +297,7 @@
 
 <owl:Class rdf:about="#Left_Cerebral_White_Matter">
   <rdfs:subClassOf rdf:resource="#White_Matter"/>
-  <rdf:ID>Left-Cerebral-White-Matter</rdf:ID>
+  <ID>Left-Cerebral-White-Matter</ID>
   <rdfs:comment>The collection of myelinated nerve fibers situated within the left cerebral hemisphere, responsible for transmitting signals between various regions of the left hemisphere and facilitating connectivity with right hemisphere.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma260794</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID16998</rdfs:seeAlso>
@@ -306,7 +306,7 @@
 
 <owl:Class rdf:about="#Left_Choroid_Plexus">
   <rdfs:subClassOf rdf:resource="#Cerebrospinal_Fluid"/>
-  <rdf:ID>Left-choroid-plexus</rdf:ID>
+  <ID>Left-choroid-plexus</ID>
   <rdfs:comment>The secretory epithelium and associated blood vessels of the lateral, third and fourth ventricles, which produce cerebrospinal fluid.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma242859</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID13830</rdfs:seeAlso>
@@ -315,7 +315,7 @@
 
 <owl:Class rdf:about="#Left_Cuneus">
   <rdfs:subClassOf rdf:resource="#Left_Occipital_Lobe"/>
-  <rdf:ID>ctx-lh-cuneus</rdf:ID>
+  <ID>ctx-lh-cuneus</ID>
   <rdfs:comment>The cuneus is a wedge shaped segment of the occipital lobe on the medial surface of the cerebral hemisphere between the calcarine and parieto-occipital fissures.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72680</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID26552</rdfs:seeAlso>
@@ -338,7 +338,7 @@
 
 <owl:Class rdf:about="#Left_Entorhinal">
   <rdfs:subClassOf rdf:resource="#Left_Temporal_Lobe"/>
-  <rdf:ID>ctx-lh-entorhinal</rdf:ID>
+  <ID>ctx-lh-entorhinal</ID>
   <rdfs:comment>The entorhinal cortex is located in the medial temporal lobe, whose functions include being a widespread network hub for memory, navigation, and the perception of time.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72741</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID26411</rdfs:seeAlso>
@@ -347,7 +347,7 @@
 
 <owl:Class rdf:about="#Left_Fusiform">
   <rdfs:subClassOf rdf:resource="#Left_Temporal_Lobe"/>
-  <rdf:ID>ctx-lh-fusiform</rdf:ID>
+  <ID>ctx-lh-fusiform</ID>
   <rdfs:comment>The fusiform gyrus, also known as the lateral occipitotemporal gyrus, is a structure that lies on the basal surface of the temporal and occipital lobes.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72690</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID26541</rdfs:seeAlso>
@@ -356,7 +356,7 @@
 
 <owl:Class rdf:about="#Left_Hippocampus">
   <rdfs:subClassOf rdf:resource="#Left_Temporal_Lobe"/>
-  <rdf:ID>Left-Hippocampus</rdf:ID>
+  <ID>Left-Hippocampus</ID>
   <rdfs:comment>Gyrus of limbic lobe, each instance of which is convoluted mass of gray matter extending the entire length of the floor of the temporal horn of some lateral ventricle; it is part of some limbic system and plays major roles in short term memory and spatial navigation.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma275024</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID26567</rdfs:seeAlso>
@@ -365,14 +365,14 @@
 
 <owl:Class rdf:about="#Left_Inf-Lat-Vent">
   <rdfs:subClassOf rdf:resource="#Cerebrospinal_Fluid"/>
-  <rdf:ID>Left-Inf-Lat-Vent</rdf:ID>
+  <ID>Left-Inf-Lat-Vent</ID>
   <rdfs:comment>The inferior lateral ventricle refers to the lower portion of the lateral ventricle within the brain.</rdfs:comment>
   <LR_model_coef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[sex:-209.13856479672955, age:19.210179964404322, field_strength:6.104766625133827, eTIV:0.00040235813651359173, intercept: -1166.111545232525]</LR_model_coef>
 </owl:Class>
 
 <owl:Class rdf:about="#Left_Inferior_Parietal">
   <rdfs:subClassOf rdf:resource="#Left_Parietal_Lobe"/>
-  <rdf:ID>ctx-lh-inferiorparietal</rdf:ID>
+  <ID>ctx-lh-inferiorparietal</ID>
   <rdfs:comment>The inferior parietal lobule is the lower part of the parietal lobe on the lateral surface of the cerebral hemisphere, below the intraparietal sulcus, and behind the post-central gyrus. It consists of the angular and supramarginal gyri.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma81255</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID14108</rdfs:seeAlso>
@@ -389,7 +389,7 @@
 
 <owl:Class rdf:about="#Left_Inferior_Temporal">
   <rdfs:subClassOf rdf:resource="#Left_Temporal_Lobe"/>
-  <rdf:ID>ctx-lh-inferiortemporal</rdf:ID>
+  <ID>ctx-lh-inferiortemporal</ID>
   <rdfs:comment>The inferior temporal gyrus is one of three gyri of the temporal lobe and is located below the middle temporal gyrus, connected behind with the inferior occipital gyrus.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72688</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID13893</rdfs:seeAlso>
@@ -398,7 +398,7 @@
 
 <owl:Class rdf:about="#Left_Insula">
   <rdfs:subClassOf rdf:resource="#Left_Cerebrum"/>
-  <rdf:ID>ctx-lh-insula</rdf:ID>
+  <ID>ctx-lh-insula</ID>
   <rdfs:comment>Lobe of cerebral hemisphere located in the depths of the lateral fissure and is covered by portions of the frontal, parietal and temporal lobes.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72978</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID13871</rdfs:seeAlso>
@@ -407,7 +407,7 @@
 
 <owl:Class rdf:about="#Left_Isthmus">
   <rdfs:subClassOf rdf:resource="#Left_Cingulate_Gyrus"/>
-  <rdf:ID>ctx-lh-isthmuscingulate</rdf:ID>
+  <ID>ctx-lh-isthmuscingulate</ID>
   <rdfs:comment>The isthmus of the cingulate gyrus is a narrow section that extends from the cingulate gyrus into the temporal lobe. It is situated between the splenium of the corpus callosum and the lingual gyrus, forming a connection between these brain regions.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72749</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID14043</rdfs:seeAlso>
@@ -416,7 +416,7 @@
 
 <owl:Class rdf:about="#Left_Lateral_Occipital">
   <rdfs:subClassOf rdf:resource="#Left_Occipital_Lobe"/>
-  <rdf:ID>ctx-lh-lateraloccipital</rdf:ID>
+  <ID>ctx-lh-lateraloccipital</ID>
   <rdfs:comment>The lateral occipital sulcus is a horizontal sulcus that divides the lateral occipital surface into gyri. It is crucial for processing visual information related to object recognition and spatial perception.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72678</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID13938</rdfs:seeAlso>
@@ -425,7 +425,7 @@
 
 <owl:Class rdf:about="#Left_Lateral_Orbitofrontal">
   <rdfs:subClassOf rdf:resource="#Left_Frontal_Lobe"/>
-  <rdf:ID>ctx-lh-lateralorbitofrontal</rdf:ID>
+  <ID>ctx-lh-lateralorbitofrontal</ID>
   <rdfs:comment>Found on the lateral frontal surface of orbitofornatal cortex, it regulates emotions related punishments and non-rewards.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72757</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID13924</rdfs:seeAlso>
@@ -434,7 +434,7 @@
 
 <owl:Class rdf:about="#Left_Lateral_Ventricle">
   <rdfs:subClassOf rdf:resource="#Cerebrospinal_Fluid"/>
-  <rdf:ID>Left-Lateral-Ventricle</rdf:ID>
+  <ID>Left-Lateral-Ventricle</ID>
   <rdfs:comment>The lateral ventricle is a C-shaped ventricle located inside the left part of cerebral hemisphere. It consists of frontal, occipital and temporal horns and a central part or body. It is connected with the third ventricle via the interventricular foramen of Monro.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma78450</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID13789</rdfs:seeAlso>
@@ -443,7 +443,7 @@
 
 <owl:Class rdf:about="#Left_Lingual">
   <rdfs:subClassOf rdf:resource="#Left_Occipital_Lobe"/>
-  <rdf:ID>ctx-lh-lingual</rdf:ID>
+  <ID>ctx-lh-lingual</ID>
   <rdfs:comment>The lingual gyrus lies between the calcarine sulcus and the posterior part of the collateral sulcus. It plays a vital role in processing vision, especially related to letters.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72682</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID26554</rdfs:seeAlso>
@@ -452,7 +452,7 @@
 
 <owl:Class rdf:about="#Left_Medial_Orbitofrontal">
   <rdfs:subClassOf rdf:resource="#Left_Frontal_Lobe"/>
-  <rdf:ID>ctx-lh-medialorbitofrontal</rdf:ID>
+  <ID>ctx-lh-medialorbitofrontal</ID>
   <rdfs:comment>Positioned medially on the frontal lobe, it process emotions, evaluates rewards and guides social behaviors.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72759</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID13921</rdfs:seeAlso>
@@ -461,7 +461,7 @@
 
 <owl:Class rdf:about="#Left_Middle_Temporal">
   <rdfs:subClassOf rdf:resource="#Left_Temporal_Lobe"/>
-  <rdf:ID>ctx-lh-middletemporal</rdf:ID>
+  <ID>ctx-lh-middletemporal</ID>
   <rdfs:comment>The medial temporal lobe is a region within the cerebral cortex comprised of a system of anatomically related structures, including the hippocampal region and the adjacent entorhinal, perirhinal, and parahippocampal cortices.The middle temporal lobe is a region of the brain situated in the temporal lobe, and it plays a significant role in processing auditory and visual information.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72686</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID13891</rdfs:seeAlso>
@@ -470,7 +470,7 @@
 
 <owl:Class rdf:about="#Left_Nucleus_Accumbens">
   <rdfs:subClassOf rdf:resource="#Left_Basal_Ganglia"/>
-  <rdf:ID>Left-Accumbens-area</rdf:ID>
+  <ID>Left-Accumbens-area</ID>
   <rdfs:comment>The nucleus accumbens is a region in the basal forebrain rostral to the preoptic area of the hypothalamus. This brain region has been implicated in addictive behavior.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72837</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID21022</rdfs:seeAlso>
@@ -479,7 +479,7 @@
 
 <owl:Class rdf:about="#Left_Pallidum">
   <rdfs:subClassOf rdf:resource="#Left_Basal_Ganglia"/>
-  <rdf:ID>Left-Pallidum</rdf:ID>
+  <ID>Left-Pallidum</ID>
   <rdfs:comment>The globus pallidus is an inner, pale-yellow region within the lenticular nucleus and serves as a central component in the telencephalon, fulfilling a functional role within the basal ganglia.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72831</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID21018</rdfs:seeAlso>
@@ -488,7 +488,7 @@
 
 <owl:Class rdf:about="#Left_Paracentral">
   <rdfs:subClassOf rdf:resource="#Left_Frontal_Lobe"/>
-  <rdf:ID>ctx-lh-paracentral</rdf:ID>
+  <ID>ctx-lh-paracentral</ID>
   <rdfs:comment>The paracentral lobule is found on the medial aspect of the cerebral hemisphere, surrounding the paracentral sulcus, and consists of frontal and parietal parts</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma81257</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID14112</rdfs:seeAlso>
@@ -497,7 +497,7 @@
 
 <owl:Class rdf:about="#Left_Parahippocampal">
   <rdfs:subClassOf rdf:resource="#Left_Temporal_Lobe"/>
-  <rdf:ID>ctx-lh-parahippocampal</rdf:ID>
+  <ID>ctx-lh-parahippocampal</ID>
   <rdfs:comment>The parahippocampal gyrus is a grey matter cortical region of the brain that surrounds the hippocampus and is part of the limbic system. The region plays an important role in memory encoding and retrieval.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72706</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID13956</rdfs:seeAlso>
@@ -506,7 +506,7 @@
 
 <owl:Class rdf:about="#Left_Pars_Opercularis">
   <rdfs:subClassOf rdf:resource="#Left_Frontal_Lobe"/>
-  <rdf:ID>ctx-lh-parsopercularis</rdf:ID>
+  <ID>ctx-lh-parsopercularis</ID>
   <rdfs:comment>The pars opercularis refers to the vertically oriented fold of the inferior frontal gyrus in the frontal lobe of the brain. It is located at rear of the three cortical segments that form the inferior frontal gyrus. It plays a significant role in the production of speech.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72753</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID13978</rdfs:seeAlso>
@@ -515,7 +515,7 @@
 
 <owl:Class rdf:about="#Left_Pars_Orbitalis">
   <rdfs:subClassOf rdf:resource="#Left_Frontal_Lobe"/>
-  <rdf:ID>ctx-lh-parsorbitalis</rdf:ID>
+  <ID>ctx-lh-parsorbitalis</ID>
   <rdfs:comment>The pars orbitalis refers to the most rostral portion of the inferior frontal gyrus in the frontal lobe of the brain. It plays a role in the language processing network of the brain.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72755</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID13981</rdfs:seeAlso>
@@ -524,7 +524,7 @@
 
 <owl:Class rdf:about="#Left_Pars_Triangularis">
   <rdfs:subClassOf rdf:resource="#Left_Frontal_Lobe"/>
-  <rdf:ID>ctx-lh-parstriangularis</rdf:ID>
+  <ID>ctx-lh-parstriangularis</ID>
   <rdfs:comment>The pars triangularis refers to the triangular shaped cortical region of the inferior frontal gyrus in the frontal lobe of the brain. It sits in between pars orbitalis and pars opercularis. It is well known in its involvement in speech production.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72751</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID13975</rdfs:seeAlso>
@@ -533,14 +533,14 @@
 
 <owl:Class rdf:about="#Left_Pericalcarine">
   <rdfs:subClassOf rdf:resource="#Left_Occipital_Lobe"/>
-  <rdf:ID>ctx-lh-pericalcarine</rdf:ID>
+  <ID>ctx-lh-pericalcarine</ID>
   <rdfs:comment>The pericalcarine of occipiatal lobe is positioned around calcarine fissure, it contains the primary visual cortex and serves as a primary visual processing area responsible for analyzing basic visual features.</rdfs:comment>
   <LR_model_coef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[sex:-6.276331083983708, age:-11.074047881105509, field_strength:72.96246791035999, eTIV:0.0006887612887208044, intercept: 1317.7068769101634]</LR_model_coef>
 </owl:Class>
 
 <owl:Class rdf:about="#Left_Postcentral">
   <rdfs:subClassOf rdf:resource="#Left_Parietal_Lobe"/>
-  <rdf:ID>ctx-lh-postcentral</rdf:ID>
+  <ID>ctx-lh-postcentral</ID>
   <rdfs:comment>The postcentral gyrus is on the lateral surface of the cerebral hemisphere, parallel to the central sulcus, separating the postcentral gyrus from the superior and inferior parietal lobules.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72666</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID13928</rdfs:seeAlso>
@@ -549,7 +549,7 @@
 
 <owl:Class rdf:about="#Left_Posterior">
   <rdfs:subClassOf rdf:resource="#Left_Cingulate_Gyrus"/>
-  <rdf:ID>ctx-lh-posteriorcingulate</rdf:ID>
+  <ID>ctx-lh-posteriorcingulate</ID>
   <rdfs:comment>The posterior cingulate gyrus is located behind the thalamus and below the splenium, it regulates attention, processes emotions, and stores memories, influencing higher-order cognitive functions.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72747</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID14049</rdfs:seeAlso>
@@ -558,7 +558,7 @@
 
 <owl:Class rdf:about="#Left_Precentral">
   <rdfs:subClassOf rdf:resource="#Left_Frontal_Lobe"/>
-  <rdf:ID>ctx-lh-precentral</rdf:ID>
+  <ID>ctx-lh-precentral</ID>
   <rdfs:comment>Located on the lateral surface of each frontal lobe, anterior to the central sulcus. It contains the primary motor cortex which is responsible for the control of voluntary motor movement.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72662</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID13912</rdfs:seeAlso>
@@ -567,7 +567,7 @@
 
 <owl:Class rdf:about="#Left_Precuneus">
   <rdfs:subClassOf rdf:resource="#Left_Parietal_Lobe"/>
-  <rdf:ID>ctx-lh-precuneus</rdf:ID>
+  <ID>ctx-lh-precuneus</ID>
   <rdfs:comment>The precuneus is found rostral to the parietooccipital sulcus and dorsal to the subparietal sulcus on the medial aspect of the parietal lobe.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72674</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID13963</rdfs:seeAlso>
@@ -576,7 +576,7 @@
 
 <owl:Class rdf:about="#Left_Putamen">
   <rdfs:subClassOf rdf:resource="#Left_Basal_Ganglia"/>
-  <rdf:ID>Left-Putamen</rdf:ID>
+  <ID>Left-Putamen</ID>
   <rdfs:comment>Nucleus of brain which lies ventral to the caudate nucleus and internal capsule and medial to the external capsule.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72829</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID21015</rdfs:seeAlso>
@@ -585,21 +585,21 @@
 
 <owl:Class rdf:about="#Left_Rostral_Anterior">
   <rdfs:subClassOf rdf:resource="#Left_Cingulate_Gyrus"/>
-  <rdf:ID>ctx-lh-rostralanteriorcingulate</rdf:ID>
+  <ID>ctx-lh-rostralanteriorcingulate</ID>
   <rdfs:comment>Located at the front part of the cingulate gyrus, the rostral anterior region is associated with various cognitive functions and emotional processing.</rdfs:comment>
   <LR_model_coef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[sex:-103.48170487219211, age:-18.804131713124153, field_strength:66.06101709959717, eTIV:0.0016556371876405094, intercept: 2013.3327939020273]</LR_model_coef>
 </owl:Class>
 
 <owl:Class rdf:about="#Left_Rostral_Middle_Frontal">
   <rdfs:subClassOf rdf:resource="#Left_Frontal_Lobe"/>
-  <rdf:ID>ctx-lh-rostralmiddlefrontal</rdf:ID>
+  <ID>ctx-lh-rostralmiddlefrontal</ID>
   <rdfs:comment>Located at the front and middle portion of the frontal lobe, the rostral middle frontal gyrus contributes to decision-making and executive control in cognitive functions.</rdfs:comment>
   <LR_model_coef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[sex:-150.67015061198788, age:-49.45921900925986, field_strength:268.07156846089526, eTIV:0.00457546522586759, intercept: 6279.739556555675]</LR_model_coef>
 </owl:Class>
 
 <owl:Class rdf:about="#Left_Superior_Frontal">
   <rdfs:subClassOf rdf:resource="#Left_Frontal_Lobe"/>
-  <rdf:ID>ctx-lh-superiorfrontal</rdf:ID>
+  <ID>ctx-lh-superiorfrontal</ID>
   <rdfs:comment>The superior frontal gyrus is the most dorsal gyrus of the frontal lobe on the lateral surface of the cerebral hemisphere.Tthe superior frontal gyrus plays a key role in advanced cognitive processes such as motor planning, working memory, and attention.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72654</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID13903</rdfs:seeAlso>
@@ -608,7 +608,7 @@
 
 <owl:Class rdf:about="#Left_Superior_Parietal">
   <rdfs:subClassOf rdf:resource="#Left_Parietal_Lobe"/>
-  <rdf:ID>ctx-lh-superiorparietal</rdf:ID>
+  <ID>ctx-lh-superiorparietal</ID>
   <rdfs:comment>The superior parietal lobule is a large parietal lobule above the intraparietal sulcus on the lateral surface of the cerebral cortex.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72672</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID14110</rdfs:seeAlso>
@@ -617,7 +617,7 @@
 
 <owl:Class rdf:about="#Left_Superior_Temporal">
   <rdfs:subClassOf rdf:resource="#Left_Temporal_Lobe"/>
-  <rdf:ID>ctx-lh-superiortemporal</rdf:ID>
+  <ID>ctx-lh-superiortemporal</ID>
   <rdfs:comment>Superior temoral lobe is a gyrus in the temporal lobe that contains parts of the auditory cortex. It includes Wernicke's area, which is the major area involved in the comprehension of language.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72684</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID13889</rdfs:seeAlso>
@@ -626,7 +626,7 @@
 
 <owl:Class rdf:about="#Left_Supramarginal">
   <rdfs:subClassOf rdf:resource="#Left_Parietal_Lobe"/>
-  <rdf:ID>ctx-lh-supramarginal</rdf:ID>
+  <ID>ctx-lh-supramarginal</ID>
   <rdfs:comment>The supramarginal gyrus is a part of the inferior parietal lobule, which caps the posterior tip of the lateral sulcus.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72668</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID13930</rdfs:seeAlso>
@@ -636,21 +636,21 @@
 <owl:Class rdf:about="#Left_Thalamus">
   <rdfs:subClassOf rdf:resource="#Left_Diencephalon"/>
   <owl:disjointWith rdf:resource="#Left_Ventral_Diencephalon"/>
-  <rdf:ID>Left-Thalamus-Proper</rdf:ID>
+  <ID>Left-Thalamus-Proper</ID>
   <rdfs:comment>Situated in brain's central region, thalamus is largely composed of nuclei, which relay sensory, motor and limbic information to the cerebral cortex and subpallial structures.</rdfs:comment>
   <LR_model_coef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[sex:-65.65672049161887, age:-44.96514114574023, field_strength:29.9283483431016, eTIV:0.002336195466939702, intercept: 6257.399447576971]</LR_model_coef>
 </owl:Class>
 
 <owl:Class rdf:about="#Left_Ventral_Diencephalon">
   <rdfs:subClassOf rdf:resource="#Left_Diencephalon"/>
-  <rdf:ID>Left-VentralDC</rdf:ID>
+  <ID>Left-VentralDC</ID>
   <rdfs:comment>The ventral diencephalon refers to the lower part of the diencephalon. It encompasses structures such as the hypothalamus and the lower section of the thalamus.</rdfs:comment>
   <LR_model_coef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[sex:-208.1318141559152, age:-20.49926902985504, field_strength:60.36745393384728, eTIV:0.0011521993226435339, intercept: 3725.5766547160965]</LR_model_coef>
 </owl:Class>
 
 <owl:Class rdf:about="#Left_Transverse_Temporal">
   <rdfs:subClassOf rdf:resource="#Left_Temporal_Lobe"/>
-  <rdf:ID>ctx-lh-transversetemporal</rdf:ID>
+  <ID>ctx-lh-transversetemporal</ID>
   <rdfs:comment>Commonly referred to as Heschl's gyri; Transverse temporal gyri constitute a set of gyri situated deep within the lateral sulcus in the temporal lobe. These gyri typically house the primary auditory cortex.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma273675</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID26543</rdfs:seeAlso>
@@ -659,28 +659,28 @@
 
 <owl:Class rdf:about="#Mid_Anterior">
   <rdfs:subClassOf rdf:resource="#Corpus_Callosum"/>
-  <rdf:ID>CC_Mid_Anterior</rdf:ID>
+  <ID>CC_Mid_Anterior</ID>
   <rdfs:comment>The intermediate front segment of the corpus callosum, facilitating communication between specific regions in the anterior frontal lobes, crucial for executive functions and emotional processing.</rdfs:comment>
   <LR_model_coef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[sex:-42.37961049078707, age:-8.203328353849768, field_strength:10.258051352382378, eTIV:5.8149696295412145e-05, intercept: 1056.1092728098786]</LR_model_coef>
 </owl:Class>
 
 <owl:Class rdf:about="#Mid_Posterior">
   <rdfs:subClassOf rdf:resource="#Corpus_Callosum"/>
-  <rdf:ID>CC_Mid_Posterior</rdf:ID>
+  <ID>CC_Mid_Posterior</ID>
   <rdfs:comment>The middle rear part of the corpus callosum, connecting parietal and posterior temporal regions, contributing to spatial awareness, language processing, and integration of sensory information.</rdfs:comment>
   <LR_model_coef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[sex:-8.756632100660259, age:-4.5126183897479875, field_strength:11.638130522623102, eTIV:0.00011133062807234848, intercept: 676.3947580023207]</LR_model_coef>
 </owl:Class>
 
 <owl:Class rdf:about="#Posterior">
   <rdfs:subClassOf rdf:resource="#Corpus_Callosum"/>
-  <rdf:ID>CC_Posterior</rdf:ID>
+  <ID>CC_Posterior</ID>
   <rdfs:comment>The back portion of the corpus callosum, linking corresponding areas of the parietal, temporal, and occipital lobes, essential for visual processing, spatial orientation, and cross-modal integration.</rdfs:comment>
   <LR_model_coef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[sex:16.399903600115596, age:-1.6823554538781993, field_strength:30.388491289617566, eTIV:0.00034282979694340364, intercept: 522.4470781386075]</LR_model_coef>
 </owl:Class>
 
 <owl:Class rdf:about="#Right_Amygdala">
   <rdfs:subClassOf rdf:resource="#Right_Temporal_Lobe"/>
-  <rdf:ID>Right-Amygdala</rdf:ID>
+  <ID>Right-Amygdala</ID>
   <rdfs:comment>Basal ganglion of telencephalon which is an almond-shaped gray mass in the dorsomedial part of the temporal lobe.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72832</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID15699</rdfs:seeAlso>
@@ -710,7 +710,7 @@
 
 <owl:Class rdf:about="#Right_Caudal_Anterior">
   <rdfs:subClassOf rdf:resource="#Right_Cingulate_Gyrus"/>
-  <rdf:ID>ctx-rh-caudalanteriorcingulate</rdf:ID>
+  <ID>ctx-rh-caudalanteriorcingulate</ID>
   <rdfs:comment>The caudal anterior part of the cingulate gyrus is situated at both its posterior and anterior ends, contributing to emotional and cognitive regulation.</rdfs:comment>
   <LR_model_coef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[sex:13.597436252504849, age:-8.085648129942228, field_strength:55.13620090637073, eTIV:0.000766973962669078, intercept: 1257.4971055051235]</LR_model_coef>
 </owl:Class>
@@ -725,7 +725,7 @@
 
 <owl:Class rdf:about="#Right_Caudal_Middle_Frontal">
   <rdfs:subClassOf rdf:resource="#Right_Frontal_Lobe"/>
-  <rdf:ID>ctx-rh-caudalmiddlefrontal</rdf:ID>
+  <ID>ctx-rh-caudalmiddlefrontal</ID>
   <rdfs:comment>Refers to the posterior part of the middle frontal gyrus in the frontal lobe of the cerebrum. It plays a role in various cognitive functions, including motor planning and executive functions.</rdfs:comment>
   <LR_model_coef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[sex:51.75747715900588, age:-29.491765990384614, field_strength:254.52400273181476, eTIV:0.002548998006487819, intercept: 3128.4409343511425]</LR_model_coef>
 </owl:Class>
@@ -740,7 +740,7 @@
 
 <owl:Class rdf:about="#Right_Caudate_Nucleus">
   <rdfs:subClassOf rdf:resource="#Right_Basal_Ganglia"/>
-  <rdf:ID>Right-Caudate</rdf:ID>
+  <ID>Right-Caudate</ID>
   <rdfs:comment>Nucleus of brain which is an elongated crescent-shaped mass lying parallel and adjacent to the lateral ventricle throughout its extent.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72826</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID21019</rdfs:seeAlso>
@@ -750,7 +750,7 @@
 <owl:Class rdf:about="#Right_Cerebellum_Cortex">
   <rdfs:subClassOf rdf:resource="#Right_Cerebellum"/>
   <owl:disjointWith rdf:resource="#Right_Cerebellum_White_Matter"/>
-  <rdf:ID>Right-Cerebellum-Cortex</rdf:ID>
+  <ID>Right-Cerebellum-Cortex</ID>
   <rdfs:comment>The cerebellar cortex is composed of a large number of cerebellar folia, forming the various lobules, and consists of three layers, from the outside inwards: (1) the molecular; (2) the Purkinje cell layer; and (3) the granular layer, which borders on the central white matter of the cerebellum.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma277130</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID15573</rdfs:seeAlso>
@@ -759,7 +759,7 @@
 
 <owl:Class rdf:about="#Right_Cerebellum_White_Matter">
   <rdfs:subClassOf rdf:resource="#Right_Cerebellum"/>
-  <rdf:ID>Right-Cerebellum-White-Matter</rdf:ID>
+  <ID>Right-Cerebellum-White-Matter</ID>
   <rdfs:comment>The white matter located in the right hemisphere of the cerebellum, facilitating communication between various cerebellar regions and connecting with other brain areas to coordinate motor functions and balance.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma274035</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID17312</rdfs:seeAlso>
@@ -768,7 +768,7 @@
 
 <owl:Class rdf:about="#Right_Cerebral_White_Matter">
   <rdfs:subClassOf rdf:resource="#White_Matter"/>
-  <rdf:ID>Right-Cerebral-White-Matter</rdf:ID>
+  <ID>Right-Cerebral-White-Matter</ID>
   <rdfs:comment>The collection of myelinated nerve fibers situated within the right cerebral hemisphere, responsible for transmitting signals between various regions of the right hemisphere and facilitating connectivity with left hemisphere.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma260791</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID16997</rdfs:seeAlso>
@@ -777,7 +777,7 @@
 
 <owl:Class rdf:about="#Right_Choroid_Plexus">
   <rdfs:subClassOf rdf:resource="#Cerebrospinal_Fluid"/>
-  <rdf:ID>Right-choroid-plexus</rdf:ID>
+  <ID>Right-choroid-plexus</ID>
   <rdfs:comment>The secretory epithelium and associated blood vessels of the lateral, third and fourth ventricles, which produce cerebrospinal fluid.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma242857</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID13829</rdfs:seeAlso>
@@ -786,7 +786,7 @@
 
 <owl:Class rdf:about="#Right_Cuneus">
   <rdfs:subClassOf rdf:resource="#Right_Occipital_Lobe"/>
-  <rdf:ID>ctx-rh-cuneus</rdf:ID>
+  <ID>ctx-rh-cuneus</ID>
   <rdfs:comment>The cuneus is a wedge shaped segment of the occipital lobe on the medial surface of the cerebral hemisphere between the calcarine and parieto-occipital fissures.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72679</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID26551</rdfs:seeAlso>
@@ -809,7 +809,7 @@
 
 <owl:Class rdf:about="#Right_Entorhinal">
   <rdfs:subClassOf rdf:resource="#Right_Temporal_Lobe"/>
-  <rdf:ID>ctx-rh-entorhinal</rdf:ID>
+  <ID>ctx-rh-entorhinal</ID>
   <rdfs:comment>The entorhinal cortex is located in the medial temporal lobe, whose functions include being a widespread network hub for memory, navigation, and the perception of time.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72740</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID26410</rdfs:seeAlso>
@@ -818,7 +818,7 @@
 
 <owl:Class rdf:about="#Right_Fusiform">
   <rdfs:subClassOf rdf:resource="#Right_Temporal_Lobe"/>
-  <rdf:ID>ctx-rh-fusiform</rdf:ID>
+  <ID>ctx-rh-fusiform</ID>
   <rdfs:comment>The fusiform gyrus, also known as the lateral occipitotemporal gyrus, is a structure that lies on the basal surface of the temporal and occipital lobes.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72689</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID26540</rdfs:seeAlso>
@@ -827,7 +827,7 @@
 
 <owl:Class rdf:about="#Right_Hippocampus">
   <rdfs:subClassOf rdf:resource="#Right_Temporal_Lobe"/>
-  <rdf:ID>Right-Hippocampus</rdf:ID>
+  <ID>Right-Hippocampus</ID>
   <rdfs:comment>Gyrus of limbic lobe, each instance of which is convoluted mass of gray matter extending the entire length of the floor of the temporal horn of some lateral ventricle; it is part of some limbic system and plays major roles in short term memory and spatial navigation.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma275022</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID26566</rdfs:seeAlso>
@@ -836,14 +836,14 @@
 
 <owl:Class rdf:about="#Right_Inf-Lat-Vent">
   <rdfs:subClassOf rdf:resource="#Cerebrospinal_Fluid"/>
-  <rdf:ID>Right-Inf-Lat-Vent</rdf:ID>
+  <ID>Right-Inf-Lat-Vent</ID>
   <rdfs:comment>The inferior lateral ventricle refers to the lower portion of the lateral ventricle within the brain.</rdfs:comment>
   <LR_model_coef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[sex:-196.64374104021113, age:17.57424496520566, field_strength:-4.73824827696606, eTIV:0.00030979518311908616, intercept: -961.4823246802488]</LR_model_coef>
 </owl:Class>
 
 <owl:Class rdf:about="#Right_Inferior_Parietal">
   <rdfs:subClassOf rdf:resource="#Right_Parietal_Lobe"/>
-  <rdf:ID>ctx-rh-inferiorparietal</rdf:ID>
+  <ID>ctx-rh-inferiorparietal</ID>
   <rdfs:comment>The inferior parietal lobule is the lower part of the parietal lobe on the lateral surface of the cerebral hemisphere, below the intraparietal sulcus, and behind the post-central gyrus. It consists of the angular and supramarginal gyri.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma81254</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID14107</rdfs:seeAlso>
@@ -860,7 +860,7 @@
 
 <owl:Class rdf:about="#Right_Inferior_Temporal">
   <rdfs:subClassOf rdf:resource="#Right_Temporal_Lobe"/>
-  <rdf:ID>ctx-rh-inferiortemporal</rdf:ID>
+  <ID>ctx-rh-inferiortemporal</ID>
   <rdfs:comment>The inferior temporal gyrus is one of three gyri of the temporal lobe and is located below the middle temporal gyrus, connected behind with the inferior occipital gyrus.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72687</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID13892</rdfs:seeAlso>
@@ -869,7 +869,7 @@
 
 <owl:Class rdf:about="#Right_Insula">
   <rdfs:subClassOf rdf:resource="#Right_Cerebrum"/>
-  <rdf:ID>ctx-rh-insula</rdf:ID>
+  <ID>ctx-rh-insula</ID>
   <rdfs:comment>Lobe of cerebral hemispheere located in the depths of the lateral fissure and is covered by portions of the frontal, parietal and temporal lobes.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72977</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID13870</rdfs:seeAlso>
@@ -878,7 +878,7 @@
 
 <owl:Class rdf:about="#Right_Isthmus">
   <rdfs:subClassOf rdf:resource="#Right_Cingulate_Gyrus"/>
-  <rdf:ID>ctx-rh-isthmuscingulate</rdf:ID>
+  <ID>ctx-rh-isthmuscingulate</ID>
   <rdfs:comment>The isthmus of the cingulate gyrus is a narrow section that extends from the cingulate gyrus into the temporal lobe. It is situated between the splenium of the corpus callosum and the lingual gyrus, forming a connection between these brain regions.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72748</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID14042</rdfs:seeAlso>
@@ -887,7 +887,7 @@
 
 <owl:Class rdf:about="#Right_Lateral_Occipital">
   <rdfs:subClassOf rdf:resource="#Right_Occipital_Lobe"/>
-  <rdf:ID>ctx-rh-lateraloccipital</rdf:ID>
+  <ID>ctx-rh-lateraloccipital</ID>
   <rdfs:comment>The lateral occipital sulcus is a horizontal sulcus that divides the lateral occipital surface into gyri. It is crucial for processing visual information related to object recognition and spatial perception.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72677</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID13937</rdfs:seeAlso>
@@ -896,7 +896,7 @@
 
 <owl:Class rdf:about="#Right_Lateral_Orbitofrontal">
   <rdfs:subClassOf rdf:resource="#Right_Frontal_Lobe"/>
-  <rdf:ID>ctx-rh-lateralorbitofrontal</rdf:ID>
+  <ID>ctx-rh-lateralorbitofrontal</ID>
   <rdfs:comment>Found on the lateral frontal surface of orbitofornatal cortex, it regulates emotions related punishments and non-rewards.</rdfs:comment>
   <rdfs:seeAlso>http://radlex.org/RID/RID13923</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID13924</rdfs:seeAlso>
@@ -905,7 +905,7 @@
 
 <owl:Class rdf:about="#Right_Lateral_Ventricle">
   <rdfs:subClassOf rdf:resource="#Cerebrospinal_Fluid"/>
-  <rdf:ID>Right-Lateral-Ventricle</rdf:ID>
+  <ID>Right-Lateral-Ventricle</ID>
   <rdfs:comment>The lateral ventricle is a C-shaped ventricle located inside the right part of cerebral hemisphere. It consists of frontal, occipital and temporal horns and a central part or body. It is connected with the third ventricle via the interventricular foramen of Monro.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma78449</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID13788</rdfs:seeAlso>
@@ -914,7 +914,7 @@
 
 <owl:Class rdf:about="#Right_Lingual">
   <rdfs:subClassOf rdf:resource="#Right_Occipital_Lobe"/>
-  <rdf:ID>ctx-rh-lingual</rdf:ID>
+  <ID>ctx-rh-lingual</ID>
   <rdfs:comment>The lingual gyrus lies between the calcarine sulcus and the posterior part of the collateral sulcus. It plays a vital role in processing vision, especially related to letters.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72681</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID26553</rdfs:seeAlso>
@@ -923,7 +923,7 @@
 
 <owl:Class rdf:about="#Right_Medial_Orbitofrontal">
   <rdfs:subClassOf rdf:resource="#Right_Frontal_Lobe"/>
-  <rdf:ID>ctx-rh-medialorbitofrontal</rdf:ID>
+  <ID>ctx-rh-medialorbitofrontal</ID>
   <rdfs:comment>Positioned medially on the frontal lobe, it process emotions, evaluates rewards and guides social behaviors.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72758</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID13920</rdfs:seeAlso>
@@ -932,7 +932,7 @@
 
 <owl:Class rdf:about="#Right_Middle_Temporal">
   <rdfs:subClassOf rdf:resource="#Right_Temporal_Lobe"/>
-  <rdf:ID>ctx-rh-middletemporal</rdf:ID>
+  <ID>ctx-rh-middletemporal</ID>
   <rdfs:comment>The medial temporal lobe is a region within the cerebral cortex comprised of a system of anatomically related structures, including the hippocampal region and the adjacent entorhinal, perirhinal, and parahippocampal cortices.The middle temporal lobe is a region of the brain situated in the temporal lobe, and it plays a significant role in processing auditory and visual information.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72685</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID13890</rdfs:seeAlso>
@@ -941,7 +941,7 @@
 
 <owl:Class rdf:about="#Right_Nucleus_Accumbens">
   <rdfs:subClassOf rdf:resource="#Right_Basal_Ganglia"/>
-  <rdf:ID>Right-Accumbens-area</rdf:ID>
+  <ID>Right-Accumbens-area</ID>
   <rdfs:comment>The nucleus accumbens is a region in the basal forebrain rostral to the preoptic area of the hypothalamus. This brain region has been implicated in addictive behavior.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72836</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID21021</rdfs:seeAlso>
@@ -950,7 +950,7 @@
 
 <owl:Class rdf:about="#Right_Pallidum">
   <rdfs:subClassOf rdf:resource="#Right_Basal_Ganglia"/>
-  <rdf:ID>Right-Pallidum</rdf:ID>
+  <ID>Right-Pallidum</ID>
   <rdfs:comment>The globus pallidus is an inner, pale-yellow region within the lenticular nucleus and serves as a central component in the telencephalon, fulfilling a functional role within the basal ganglia.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72830</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID21017</rdfs:seeAlso>
@@ -959,7 +959,7 @@
 
 <owl:Class rdf:about="#Right_Paracentral">
   <rdfs:subClassOf rdf:resource="#Right_Frontal_Lobe"/>
-  <rdf:ID>ctx-rh-paracentral</rdf:ID>
+  <ID>ctx-rh-paracentral</ID>
   <rdfs:comment>The paracentral lobule is found on the medial aspect of the cerebral hemisphere, surrounding the paracentral sulcus, and consists of frontal and parietal parts.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma81256</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID14111</rdfs:seeAlso>
@@ -968,7 +968,7 @@
 
 <owl:Class rdf:about="#Right_Parahippocampal">
   <rdfs:subClassOf rdf:resource="#Right_Temporal_Lobe"/>
-  <rdf:ID>ctx-rh-parahippocampal</rdf:ID>
+  <ID>ctx-rh-parahippocampal</ID>
   <rdfs:comment>The parahippocampal gyrus is a grey matter cortical region of the brain that surrounds the hippocampus and is part of the limbic system. The region plays an important role in memory encoding and retrieval.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72705</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID13955</rdfs:seeAlso>
@@ -977,7 +977,7 @@
 
 <owl:Class rdf:about="#Right_Pars_Opercularis">
   <rdfs:subClassOf rdf:resource="#Right_Frontal_Lobe"/>
-  <rdf:ID>ctx-rh-parsopercularis</rdf:ID>
+  <ID>ctx-rh-parsopercularis</ID>
   <rdfs:comment>The pars opercularis refers to the vertically oriented fold of the inferior frontal gyrus in the frontal lobe of the brain. It is located at rear of the three cortical segments that form the inferior frontal gyrus. It plays a significant role in the production of speech.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72752</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID13977</rdfs:seeAlso>
@@ -986,7 +986,7 @@
 
 <owl:Class rdf:about="#Right_Pars_Orbitalis">
   <rdfs:subClassOf rdf:resource="#Right_Frontal_Lobe"/>
-  <rdf:ID>ctx-rh-parsorbitalis</rdf:ID>
+  <ID>ctx-rh-parsorbitalis</ID>
   <rdfs:comment>The pars orbitalis refers to the most rostral portion of the inferior frontal gyrus in the frontal lobe of the brain. It plays a role in the language processing network of the brain.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72754</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID13980</rdfs:seeAlso>
@@ -995,7 +995,7 @@
 
 <owl:Class rdf:about="#Right_Pars_Triangularis">
   <rdfs:subClassOf rdf:resource="#Right_Frontal_Lobe"/>
-  <rdf:ID>ctx-rh-parstriangularis</rdf:ID>
+  <ID>ctx-rh-parstriangularis</ID>
   <rdfs:comment>The pars triangularis refers to the triangular shaped cortical region of the inferior frontal gyrus in the frontal lobe of the brain. It sits in between pars orbitalis and pars opercularis. It is well known in its involvement in speech production.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72750</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID13974</rdfs:seeAlso>
@@ -1004,14 +1004,14 @@
 
 <owl:Class rdf:about="#Right_Pericalcarine">
   <rdfs:subClassOf rdf:resource="#Right_Occipital_Lobe"/>
-  <rdf:ID>ctx-rh-pericalcarine</rdf:ID>
+  <ID>ctx-rh-pericalcarine</ID>
   <rdfs:comment>The pericalcarine of occipiatal lobe is positioned around calcarine fissure, it contains the primary visual cortex and serves as a primary visual processing area responsible for analyzing basic visual features.</rdfs:comment>
   <LR_model_coef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[sex:27.409198480716405, age:-11.872522302251593, field_strength:55.745499742170296, eTIV:0.0008232765745096438, intercept: 1395.7380756186565]</LR_model_coef>
 </owl:Class>
 
 <owl:Class rdf:about="#Right_Postcentral">
   <rdfs:subClassOf rdf:resource="#Right_Parietal_Lobe"/>
-  <rdf:ID>ctx-rh-postcentral</rdf:ID>
+  <ID>ctx-rh-postcentral</ID>
   <rdfs:comment>The postcentral gyrus is on the lateral surface of the cerebral hemisphere, parallel to the central sulcus, separating the postcentral gyrus from the superior and inferior parietal lobules.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72665</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID13927</rdfs:seeAlso>
@@ -1020,7 +1020,7 @@
 
 <owl:Class rdf:about="#Right_Posterior">
   <rdfs:subClassOf rdf:resource="#Right_Cingulate_Gyrus"/>
-  <rdf:ID>ctx-rh-posteriorcingulate</rdf:ID>
+  <ID>ctx-rh-posteriorcingulate</ID>
   <rdfs:comment>The posterior cingulate gyrus is located behind the thalamus and below the splenium, it regulates attention, processes emotions, and stores memories, influencing higher-order cognitive functions.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72746</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID14048</rdfs:seeAlso>
@@ -1029,7 +1029,7 @@
 
 <owl:Class rdf:about="#Right_Precentral">
   <rdfs:subClassOf rdf:resource="#Right_Frontal_Lobe"/>
-  <rdf:ID>ctx-rh-precentral</rdf:ID>
+  <ID>ctx-rh-precentral</ID>
   <rdfs:comment>Located on the lateral surface of each frontal lobe, anterior to the central sulcus. It contains the primary motor cortex which is responsible for the control of voluntary motor movement.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72661</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID13911</rdfs:seeAlso>
@@ -1038,7 +1038,7 @@
 
 <owl:Class rdf:about="#Right_Precuneus">
   <rdfs:subClassOf rdf:resource="#Right_Parietal_Lobe"/>
-  <rdf:ID>ctx-rh-precuneus</rdf:ID>
+  <ID>ctx-rh-precuneus</ID>
   <rdfs:comment>The precuneus is found rostral to the parietooccipital sulcus and dorsal to the subparietal sulcus on the medial aspect of the parietal lobe.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72673</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID13962</rdfs:seeAlso>
@@ -1047,7 +1047,7 @@
 
 <owl:Class rdf:about="#Right_Putamen">
   <rdfs:subClassOf rdf:resource="#Right_Basal_Ganglia"/>
-  <rdf:ID>Right-Putamen</rdf:ID>
+  <ID>Right-Putamen</ID>
   <rdfs:comment>Nucleus of brain which lies ventral to the caudate nucleus and internal capsule and medial to the external capsule.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72828</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID21014</rdfs:seeAlso>
@@ -1056,21 +1056,21 @@
 
 <owl:Class rdf:about="#Right_Rostral_Anterior">
   <rdfs:subClassOf rdf:resource="#Right_Cingulate_Gyrus"/>
-  <rdf:ID>ctx-rh-rostralanteriorcingulate</rdf:ID>
+  <ID>ctx-rh-rostralanteriorcingulate</ID>
   <rdfs:comment>Located at the front part of the cingulate gyrus, the rostral anterior region is associated with various cognitive functions and emotional processing.</rdfs:comment>
   <LR_model_coef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[sex:-93.79224288082064, age:-10.929235194003887, field_strength:46.78272975350182, eTIV:0.0012670096584409094, intercept: 1087.7569350208412]</LR_model_coef>
 </owl:Class>
 
 <owl:Class rdf:about="#Right_Rostral_Middle_Frontal">
   <rdfs:subClassOf rdf:resource="#Right_Frontal_Lobe"/>
-  <rdf:ID>ctx-rh-rostralmiddlefrontal</rdf:ID>
+  <ID>ctx-rh-rostralmiddlefrontal</ID>
   <rdfs:comment>Located at the front and middle portion of the frontal lobe, the rostral middle frontal gyrus contributes to decision-making and executive control in cognitive functions.</rdfs:comment>
   <LR_model_coef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[sex:-338.58366489247095, age:-66.5291686620023, field_strength:293.3183199176121, eTIV:0.004444405132842092, intercept: 7897.59740372365]</LR_model_coef>
 </owl:Class>
 
 <owl:Class rdf:about="#Right_Superior_Frontal">
   <rdfs:subClassOf rdf:resource="#Right_Frontal_Lobe"/>
-  <rdf:ID>ctx-rh-superiorfrontal</rdf:ID>
+  <ID>ctx-rh-superiorfrontal</ID>
   <rdfs:comment>The superior frontal gyrus is the most dorsal gyrus of the frontal lobe on the lateral surface of the cerebral hemisphere.Tthe superior frontal gyrus plays a key role in advanced cognitive processes such as motor planning, working memory, and attention.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72653</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID13902</rdfs:seeAlso>
@@ -1079,7 +1079,7 @@
 
 <owl:Class rdf:about="#Right_Superior_Parietal">
   <rdfs:subClassOf rdf:resource="#Right_Parietal_Lobe"/>
-  <rdf:ID>ctx-rh-superiorparietal</rdf:ID>
+  <ID>ctx-rh-superiorparietal</ID>
   <rdfs:comment>The superior parietal lobule is a large parietal lobule above the intraparietal sulcus on the lateral surface of the cerebral cortex.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72671</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID14109</rdfs:seeAlso>
@@ -1088,7 +1088,7 @@
 
 <owl:Class rdf:about="#Right_Superior_Temporal">
   <rdfs:subClassOf rdf:resource="#Right_Temporal_Lobe"/>
-  <rdf:ID>ctx-rh-superiortemporal</rdf:ID>
+  <ID>ctx-rh-superiortemporal</ID>
   <rdfs:comment>Superior temoral lobe is a gyrus in the temporal lobe that contains parts of the auditory cortex. It includes Wernicke's area, which is the major area involved in the comprehension of language.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72683</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID13888</rdfs:seeAlso>
@@ -1097,7 +1097,7 @@
 
 <owl:Class rdf:about="#Right_Supramarginal">
   <rdfs:subClassOf rdf:resource="#Right_Parietal_Lobe"/>
-  <rdf:ID>ctx-rh-supramarginal</rdf:ID>
+  <ID>ctx-rh-supramarginal</ID>
   <rdfs:comment>The supramarginal gyrus is a part of the inferior parietal lobule, which caps the posterior tip of the lateral sulcus.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma72667</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID13929</rdfs:seeAlso>
@@ -1107,21 +1107,21 @@
 <owl:Class rdf:about="#Right_Thalamus">
   <rdfs:subClassOf rdf:resource="#Right_Diencephalon"/>
   <owl:disjointWith rdf:resource="#Right_Ventral_Diencephalon"/>
-  <rdf:ID>Right-Thalamus-Proper</rdf:ID>
+  <ID>Right-Thalamus-Proper</ID>
   <rdfs:comment>Situated in brain's central region, thalamus is largely composed of nuclei, which relay sensory, motor and limbic information to the cerebral cortex and subpallial structures.</rdfs:comment>
   <LR_model_coef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[sex:-109.71132005669706, age:-44.31469921005507, field_strength:78.65160628103555, eTIV:0.0021944577395158413, intercept: 6245.247106499449]</LR_model_coef>
 </owl:Class>
 
 <owl:Class rdf:about="#Right_Ventral_Diencephalon">
   <rdfs:subClassOf rdf:resource="#Right_Diencephalon"/>
-  <rdf:ID>Right-VentralDC</rdf:ID>
+  <ID>Right-VentralDC</ID>
   <rdfs:comment>The ventral diencephalon refers to the lower part of the diencephalon. It encompasses structures such as the hypothalamus and the lower section of the thalamus.</rdfs:comment>
   <LR_model_coef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[sex:-230.9520102671326, age:-21.553934670041826, field_strength:77.54661956768099, eTIV:0.0011307104953639624, intercept: 3741.3924917085187]</LR_model_coef>
 </owl:Class>
 
 <owl:Class rdf:about="#Right_Transverse_Temporal">
   <rdfs:subClassOf rdf:resource="#Right_Temporal_Lobe"/>
-  <rdf:ID>ctx-rh-transversetemporal</rdf:ID>
+  <ID>ctx-rh-transversetemporal</ID>
   <rdfs:comment>Commonly referred to as Heschl's gyri; Transverse temporal gyri constitute a set of gyri situated deep within the lateral sulcus in the temporal lobe. These gyri typically house the primary auditory cortex.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma273673</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID26542</rdfs:seeAlso>
@@ -1130,14 +1130,14 @@
 
 <owl:Class rdf:about="#WM_Hypointensities">
   <rdfs:subClassOf rdf:resource="#White_Matter"/>
-  <rdf:ID>WM-hypointensities</rdf:ID>
+  <ID>WM-hypointensities</ID>
   <rdfs:comment>Abnormal areas within the white matter of the brain that appear darker than surrounding tissues on magnetic resonance imaging (MRI).</rdfs:comment>
   <LR_model_coef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[sex:360.2961586543195, age:168.8198229213373, field_strength:218.03128707401132, eTIV:0.0050842964182538026, intercept: -17050.687620369852]</LR_model_coef>
 </owl:Class>
 
 <owl:Class rdf:about="#3rd-Ventricle">
   <rdfs:subClassOf rdf:resource="#Cerebrospinal_Fluid"/>
-  <rdf:ID>3rd-Ventricle</rdf:ID>
+  <ID>3rd-Ventricle</ID>
   <rdfs:comment>The third ventricle is a narrow part of the ventricular system between the thalami and hypothalami on both sides.</rdfs:comment>
   <rdfs:seeAlso>http://purl.org/sig/ont/fma/fma273606</rdfs:seeAlso>
   <rdfs:seeAlso>http://radlex.org/RID/RID16829</rdfs:seeAlso>
@@ -1146,7 +1146,7 @@
 
 <owl:Class rdf:about="#4th-Ventricle">
   <rdfs:subClassOf rdf:resource="#Cerebrospinal_Fluid"/>
-  <rdf:ID>4th-Ventricle</rdf:ID>
+  <ID>4th-Ventricle</ID>
   <rdfs:comment>The fourth ventricle is the most caudal of the brain ventricles, shaped like a tent with a peaked roof protruding as the fastigium into the cerebellum and a diamond-shaped 
 floor, the rhomboid fossa formed by the ventricular surfaces of the pons and medulla 
 oblongata.</rdfs:comment>
