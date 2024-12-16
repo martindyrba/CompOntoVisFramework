@@ -1,8 +1,9 @@
 # Results
 Here we visualise mean-group and single-subject atrophy profiles.
 
-## Group-wise Gray Matter Volume Summary Charts
+<br><br>
 
+## Group-wise Gray Matter Volume Summary Charts
 
 **Healthy Control (HC)  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Mild Cognitive Impairment (MCI)**
 
@@ -19,23 +20,22 @@ Here we visualise mean-group and single-subject atrophy profiles.
 <p float="left">
   <img src="/Results/All_AD_mean_w_Sunburst_ryg.png" width="350" />
     &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="/Results/All_AD_mean_w_Sunburst_ryg.png" width="350" />
+  <img src="/Results/All_bvFTD_mean_w_Sunburst_ryg.png" width="350" />
 </p>
 
 [Click: Interactive Volume AD Plot](https://htmlpreview.github.io/?https://github.com/martindyrba/CompOntoVisFramework/blob/master/Results/All_AD_mean_w_Sunburst_ryg.html)
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  [Click: Interactive Volume bvFTD Plot](https://htmlpreview.github.io/?https://github.com/martindyrba/CompOntoVisFramework/blob/master/Results/All_bvFTD_mean_Average%20Cortical%20Thickness_w_Sunburst_5.html)
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  [Click: Interactive Volume bvFTD Plot](https://htmlpreview.github.io/?https://github.com/martindyrba/CompOntoVisFramework/blob/master/Results/ALL_bvFTD_mean_w_Sunburst_5.html)
 
 
-
+<br><br>
 
 ## Group-wise Average Cortical Thickness Summary Charts
-
 **Healthy Control (HC)  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Mild Cognitive Impairment (MCI)**
 
 <p float="left">
-  <img src="/Results/All_CN_mean_w_Sunburst_ryg.png" width="350" />
+  <img src="/Results/All_CN_mean_w_Sunburst_cortthick.png" width="350" />
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="/Results/All_MCI_mean_w_Sunburst_ryg.png" width="350" /> 
+  <img src="/Results/All_MCI_mean_w_Sunburst_cortthick.png" width="350" /> 
 </p>
 
 [Click: Interactive Cortical Thickness CN Plot](https://htmlpreview.github.io/?https://github.com/martindyrba/CompOntoVisFramework/blob/master/Results/All_CN_mean_Average%20Cortical%20Thickness_w_Sunburst_5.html) &emsp;&emsp;&emsp;&emsp;&emsp; [Click: Interactive Cortical Thickness MCI Plot](https://htmlpreview.github.io/?https://github.com/martindyrba/CompOntoVisFramework/blob/master/Results/All_MCI_mean_Average%20Cortical%20Thickness_w_Sunburst_5.html) 
@@ -43,15 +43,16 @@ Here we visualise mean-group and single-subject atrophy profiles.
 **Alzheimer’s Disease (AD) &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; behavioral variant Frontotemporal Dementia (bvFTD)**
 
 <p float="left">
-  <img src="/Results/All_AD_mean_w_Sunburst_ryg.png" width="350" />
+  <img src="/Results/All_AD_mean_w_Sunburst_cortthick.png" width="350" />
     &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="/Results/All_AD_mean_w_Sunburst_ryg.png" width="350" />
+  <img src="/Results/All_bvFTD_mean_w_Sunburst_cortthick.png" width="350" />
 </p>
 
 [Click: Interactive Cortical Thickness AD Plot](https://htmlpreview.github.io/?https://github.com/martindyrba/CompOntoVisFramework/blob/master/Results/All_AD_mean_Average%20Cortical%20Thickness_w_Sunburst_5.html) &emsp;&emsp;&emsp;&emsp;&emsp;  [Click: Interactive Cortical Thickness bvFTD Plot](https://htmlpreview.github.io/?https://github.com/martindyrba/CompOntoVisFramework/blob/master/Results/All_bvFTD_mean_Average%20Cortical%20Thickness_w_Sunburst_5.html)
 
 
 
+<br><br>
 
 ## Single Subject Volume Summary Charts
 <p align="center">
