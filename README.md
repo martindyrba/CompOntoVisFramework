@@ -17,9 +17,11 @@ Extending current tools, we proposed a novel interpretation pipeline by **combin
 and visual summary reports** to enhance examination of a person's atrophy profile for the whole brain at once. 
 Our study also aimed to utilise resulting summary reports for highlighting both group characteristics of disease stages as well as single-subject data.
 
-Further details could be found in our proceedings paper:
+Further details could be found in our publication:
 
-Singh & Dyrba (2024) Computational Ontology and Visualization Framework for the Visual Comparison of Brain Atrophy Profiles. Bildverarbeitung für die Medizin 2024. BVM 2024. DOI: [10.1007/978-3-658-44037-4_43](https://doi.org/10.1007/978-3-658-44037-4_43)
+Singh D, Grazia A, Reiz A, et al. A computational ontology framework for the synthesis of multi-level pathology reports from brain MRI scans. Journal of Alzheimer’s Disease. 2025;0(0). doi: [10.1177/13872877251331222](https://doi.org/10.1177/13872877251331222)
+
+
 
 ## Ontology
 Inspired by the Foundational Model of Anatomy (FMA), we developed a web ontology language (OWL)-based ontology, 
