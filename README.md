@@ -49,12 +49,18 @@ A sample summary plot for an ADNI participant with mild dementia due to Alzheime
 
 ## Citation
 ```bibtex
-@inproceedings{singh2024computational,
-  title={Computational Ontology and Visualization Framework for the Visual Comparison of Brain Atrophy Profiles},
-  author={Singh, Devesh and Dyrba, Martin},
-  booktitle={BVM Workshop},
-  pages={149--154},
-  year={2024},
-  organization={Springer}
+@article{doi:10.1177/13872877251331222,
+author = {Devesh Singh and Alice Grazia and Achim Reiz and Andreas Hermann and Slawek Altenstein and Lukas Beichert and Alexander Bernhardt and Katharina Buerger and Michaela Butryn and Peter Dechent and Emrah Duezel and Michael Ewers and Klaus Fliessbach and Silka D Freiesleben and Wenzel Glanz and Stefan Hetzer and Daniel Janowitz and Ingo Kilimann and Okka Kimmich and Christoph Laske and Johannes Levin and Andrea Lohse and Falk Luesebrink and Matthias Munk and Robert Perneczky and Oliver Peters and Lukas Preis and Josef Priller and Johannes Prudlo and Boris S Rauchmann and Ayda Rostamzadeh and Nina Roy-Kluth and Klaus Scheffler and Anja Schneider and Luisa S Schneider and Björn H Schott and Annika Spottke and Eike J Spruth and Matthis Synofzik and Jens Wiltfang and Frank Jessen and Stefan J Teipel and Martin Dyrba},
+title ={A computational ontology framework for the synthesis of multi-level pathology reports from brain MRI scans},
+journal = {Journal of Alzheimer’s Disease},
+volume = {0},
+number = {0},
+pages = {13872877251331222},
+year = {0},
+doi = {10.1177/13872877251331222},
+note ={PMID: 40255031},
+URL = { https://doi.org/10.1177/13872877251331222},
+eprint = { https://doi.org/10.1177/13872877251331222},
+abstract = { Background Convolutional neural network (CNN) based volumetry of MRI data can help differentiate Alzheimer's disease (AD) and the behavioral variant of frontotemporal dementia (bvFTD) as causes of cognitive decline and dementia. However, existing CNN-based MRI volumetry tools lack a structured hierarchical representation of brain anatomy, which would allow for aggregating regional pathological information and automated computational inference.Objective Develop a computational ontology pipeline for quantifying hierarchical pathological abnormalities and visualize summary charts for brain atrophy findings, aiding differential diagnosis.Methods Using FastSurfer, we segmented brain regions and measured volume and cortical thickness from MRI scans pooled across multiple cohorts (N = 3433; ADNI, AIBL, DELCODE, DESCRIBE, EDSD, and NIFD), including healthy controls, prodromal and clinical AD cases, and bvFTD cases. Employing the Web Ontology Language (OWL), we built a semantic model encoding hierarchical anatomical information. Additionally, we created summary visualizations based on sunburst plots for visual inspection of the information stored in the ontology.Results Our computational framework dynamically estimated and aggregated regional pathological deviations across different levels of neuroanatomy abstraction. The disease similarity index derived from the volumetric and cortical thickness deviations achieved an AUC of 0.88 for separating AD and bvFTD, which was also reflected by distinct atrophy profile visualizations.Conclusions The proposed automated pipeline facilitates visual comparison of atrophy profiles across various disease types and stages. It provides a generalizable computational framework for summarizing pathologic findings, potentially enhancing the physicians’ ability to evaluate brain pathologies robustly and interpretably. }
 }
 ```
